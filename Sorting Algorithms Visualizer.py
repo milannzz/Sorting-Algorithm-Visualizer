@@ -1,7 +1,12 @@
+from math import fabs
 from tkinter import *
 from tkinter import ttk
 import random
 import time
+
+# Clearer Ui using ctypes
+import ctypes
+ctypes.windll.shcore.SetProcessDpiAwareness(1)
 
 color = {
     "DARK_GRAY" : '#65696B',
@@ -16,7 +21,8 @@ color = {
     "LIGHT_GREEN" : '#05F50E',
     "PURPLE" : '#BF01FB'
 }
-#Main Window
+
+# <--- Main Window --->
 
 mainWindow = Tk()
 mainWindow.title("Sorting Algorithms Visualizer")
@@ -24,12 +30,14 @@ mainWindow.maxsize(1000,700)
 mainWindow.config(bg=color["LIGHT_GRAY"])
 
 algo_name = StringVar()
-algo_list = ['Bubble Sort','Merge Sort']
+algo_list = ['Bubble Sort','Merge Sort','Bogo Sort']
 
 speed_name = StringVar()
 speed_list = ['Fast','Medium','Slow']
 
 array = []
+
+# <--- Functions/definations --->
 
 def drawArray (array,colorArray):
     visualCanvas.delete("all")
@@ -74,18 +82,55 @@ def sort():
         bubble_sort(array,drawArray,timespeed)
     elif algoMenu.get() == 'Merge Sort':
         merge_sort(array,0,len(array)-1,drawArray,timespeed)
+    elif algoMenu.get() == 'Bogo Sort':
+        bogo_sort(array,drawArray,timespeed)
 
+def stop():
+    pass
+    
 
 # <--- Algorithms --->
 
-# Bubble sort
+# Bogo Sort
+
+def bogo_sort(array,drawArray,timespeed):
+    size = len(array)
+    while(is_sorted(array,drawArray,timespeed)==False):
+        shuffle(array,drawArray,timespeed)
+    
+def is_sorted(array,drawArray,timespeed):
+    size = len(array)
+    for i in range (0,size-1):
+        if(array[i] > array[i-1]):
+            return False    
+    return True
+
+def shuffle(array,drawArray,timespeed):
+    size = len(array)
+    for i in range (0,size):
+        r = random.randint(0,size-1)
+        array[i],array[r] = array[r],array[i]
+        drawArray(array,[color["YELLOW"] if x == i or x == r 
+        else color['BLUE'] for x in range(len(array))])
+        time.sleep(timespeed)
+    
+    drawArray(array,[color['BLUE'] for x in range(len(array))])
+
+# Selection Sort
+
+def selection_sort(array,drawArray,timespeed):
+    pass
+
+# Bubble Sort
+
 def bubble_sort(array,drawArray,timespeed):
     size = len(array)
     for i in range(size-1):
         for j in range(size-i-1):
             if array[j] > array[j+1]:
                 array[j],array[j+1] = array[j+1],array[j]
-                drawArray(array,[color['YELLOW'] if x ==j or x==j+1 else color["BLUE"] for x in range(len(array))])
+                drawArray(array,[color['YELLOW'] if x ==j or x==j+1 
+                else color["BLUE"] for x in range(len(array))])
                 time.sleep(timespeed)
 
     drawArray(array,[color['BLUE'] for x in range(len(array))])
@@ -151,13 +196,16 @@ speedMenu.grid(row=1,column=2,padx=5,pady=5)
 speedMenu.current(0)
 
 generateButton = Button(uiFrame,text='Generate Array',command=generate,bg=color['WHITE'])
-generateButton.grid(row=2,column=0,padx=10,pady=5)
+generateButton.grid(row=2,column=0,padx=10,pady=10)
 
-sortButton = Button(uiFrame,text='Sort',command=sort,bg=color['WHITE'])
-sortButton.grid(row=2,column=1,padx=10,pady=5)
+sortButton = Button(uiFrame,text='Sort',command=sort,bg=color['WHITE'],width=10)
+sortButton.grid(row=2,column=1,padx=10,pady=10)
+
+sortButton = Button(uiFrame,text='Stop',command=stop,bg=color['WHITE'],width=10)
+sortButton.grid(row=2,column=2,padx=10,pady=10)
 
 visualCanvas = Canvas(mainWindow,width=800,height=400,bg=color['WHITE'])
-visualCanvas.grid(row=3 ,column=0,padx=10,pady=5 )
+visualCanvas.grid(row=3 ,column=0,padx=10,pady=10)
 
 # <--- Print Main Window --->
 
