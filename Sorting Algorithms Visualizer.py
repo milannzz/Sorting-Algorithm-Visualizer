@@ -1,11 +1,11 @@
 from tkinter import *
 from tkinter import ttk
 import random
-from typing import Collection
+import time
 
 color = {
     "DARK_GRAY" : '#65696B',
-    "LIGHT_GRAY" : '#C4C5BF',
+    "LIGHT_GRAY" : '#d3d3d3',
     "BLUE" : '#0CA8F6',
     "DARK_BLUE" : '#4204CC',
     "WHITE" : '#FFFFFF',
@@ -21,7 +21,7 @@ color = {
 mainWindow = Tk()
 mainWindow.title("Sorting Algorithms Visualizer")
 mainWindow.maxsize(1000,700)
-mainWindow.config(bg=color["WHITE"])
+mainWindow.config(bg=color["LIGHT_GRAY"])
 
 algo_name = StringVar()
 algo_list = ['Bubble Sort','Merge Sort']
@@ -60,9 +60,9 @@ def generate():
 
 def setspeed():
     if speedMenu.get() == 'Slow':
-        return 0.3
+        return 0.300
     elif speedMenu.get() == 'Medium':
-        return 0.1
+        return 0.100
     else:
         return 0.001
 
@@ -72,10 +72,13 @@ def sort():
 
     if algoMenu.get() == 'Bubble Sort':
         bubble_sort(array,drawArray,timespeed)
-    pass
+    elif algoMenu.get() == 'Merge Sort':
+        merge_sort(array,0,len(array)-1,drawArray,timespeed)
+
 
 # <--- Algorithms --->
 
+# Bubble sort
 def bubble_sort(array,drawArray,timespeed):
     size = len(array)
     for i in range(size-1):
@@ -83,8 +86,52 @@ def bubble_sort(array,drawArray,timespeed):
             if array[j] > array[j+1]:
                 array[j],array[j+1] = array[j+1],array[j]
                 drawArray(array,[color['YELLOW'] if x ==j or x==j+1 else color["BLUE"] for x in range(len(array))])
+                time.sleep(timespeed)
 
     drawArray(array,[color['BLUE'] for x in range(len(array))])
+
+# Merge Sort
+
+def merge(data, start, mid, end, drawData, timeTick):
+    p = start
+    q = mid + 1
+    tempArray = []
+
+    for i in range(start, end+1):
+        if p > mid:
+            tempArray.append(data[q])
+            q+=1
+        elif q > end:
+            tempArray.append(data[p])
+            p+=1
+        elif data[p] < data[q]:
+            tempArray.append(data[p])
+            p+=1
+        else:
+            tempArray.append(data[q])
+            q+=1
+
+    for p in range(len(tempArray)):
+        data[start] = tempArray[p]
+        start += 1
+
+def merge_sort(array,start,end,drawArray,timespeed):
+    if start<end:
+        mid = int((start+end)/2)
+        merge_sort(array,start,mid,drawArray,timespeed)
+        merge_sort(array,mid+1,end,drawArray,timespeed)
+
+        merge(array,start,mid,end,drawArray,timespeed)
+
+        drawArray(array,[color["PURPLE"] if x >=start 
+            and x < mid else color['YELLOW'] if x==mid 
+            else color['DARK_BLUE'] if x >mid and x<=end 
+            else color['BLUE'] for x in range(len(array))])
+        
+        time.sleep(timespeed)
+    
+    drawArray(array,[color["BLUE"] for x in range(len(array))])
+
 
 # <--- UI elements here --->
 
@@ -92,26 +139,26 @@ uiFrame = Frame(mainWindow,width=900,height=300,bg=color['WHITE'])
 uiFrame.grid(row=0,column=0,padx=10,pady=5)
 
 uiAlgos = Label(uiFrame,text='Algorithms: ',bg=color['WHITE'])
-uiAlgos.grid(row=0,column=1,padx=10,pady=5,sticky=W)
+uiAlgos.grid(row=0,column=0,padx=10,pady=5,sticky=W)
 algoMenu = ttk.Combobox(uiFrame,textvariable=algo_name,values=algo_list)
 algoMenu.grid(row=0,column=2,padx=5,pady=5)
 algoMenu.current(0)
 
 uiSpeed = Label(uiFrame,text='Speed: ',bg=color['WHITE'])
-uiSpeed.grid(row=1,column=1,padx=10,pady=5,sticky=W)
+uiSpeed.grid(row=1,column=0,padx=10,pady=5,sticky=W)
 speedMenu = ttk.Combobox(uiFrame,textvariable=speed_name,values=speed_list)
 speedMenu.grid(row=1,column=2,padx=5,pady=5)
 speedMenu.current(0)
 
 generateButton = Button(uiFrame,text='Generate Array',command=generate,bg=color['WHITE'])
-generateButton.grid(row=2,column=0,padx=5,pady=5)
+generateButton.grid(row=2,column=0,padx=10,pady=5)
 
 sortButton = Button(uiFrame,text='Sort',command=sort,bg=color['WHITE'])
-sortButton.grid(row=2,column=1,padx=5,pady=5)
+sortButton.grid(row=2,column=1,padx=10,pady=5)
 
 visualCanvas = Canvas(mainWindow,width=800,height=400,bg=color['WHITE'])
 visualCanvas.grid(row=3 ,column=0,padx=10,pady=5 )
 
-#Print Main Window
+# <--- Print Main Window --->
 
 mainWindow.mainloop()
