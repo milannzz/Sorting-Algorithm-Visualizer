@@ -3,10 +3,14 @@ The human brain can easily process visuals instead of long codes to understand t
 
 Few designs and working examples -
 
+illustration 1 -
+
 ![](https://github.com/milannzz/Sorting-Algorithm-Visualizer-in-Python/blob/master/Images/1.png)
 
+Illustration 2 -
 
 ![](https://github.com/milannzz/Sorting-Algorithm-Visualizer-in-Python/blob/master/Images/2.png)
 
+illustration 3 -
 
 ![](https://github.com/milannzz/Sorting-Algorithm-Visualizer-in-Python/blob/master/Images/3.png)
