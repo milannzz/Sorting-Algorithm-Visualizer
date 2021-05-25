@@ -1,6 +1,15 @@
 # Sorting-Algorithm-Visualizer-in-Python
 The human brain can easily process visuals instead of long codes to understand the algorithms. In this article, a program that program visualizes the different sort Algorithm has been implemented.
 
+**How To use -**
+1. open sav.exe.
+2. click generate to create a random array.
+3. Choose your desired algorithms from dropdown menu.
+4. click sort.
+5. click stop to interuptt program.
+
+**Note-** Please do not interuppt program while sorting or it can cause an crash.
+
 Few designs and working examples -
 
 Illustration 1 -
