@@ -9,7 +9,7 @@ The human brain can easily process visuals instead of long codes to understand t
 5. click stop to interrupt sorting  algorithm.
 6. click exit to stop program.
 
-**Note-** Please do not interuppt program while sorting or it can cause an crash.
+**Note-** Please do not interrupt program while sorting or it can cause an crash.
 
 Few designs and working examples -
 
