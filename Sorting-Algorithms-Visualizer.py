@@ -19,7 +19,8 @@ color = {
     "YELLOW" : '#F7E806',
     "PINK" : '#F50BED',
     "LIGHT_GREEN" : '#05F50E',
-    "PURPLE" : '#BF01FB'
+    "PURPLE" : '#BF01FB',
+    "RED" : '#FF0000'
 }
 
 # <--- Main Window --->
@@ -85,11 +86,37 @@ def sort():
     elif algoMenu.get() == 'Bogo Sort':
         bogo_sort(array,drawArray,timespeed)
 
+def swithchon():
+    global switch
+    switch = True
+    #print ('switch on')
+    sort()
+
 def stop():
-    pass
+    global switch
+    switch = False
+    #print("Stop")
+
+def exit():
+    #print("Exiting..")
+    mainWindow.destroy()
     
 
 # <--- Algorithms --->
+
+# Bubble Sort
+
+def bubble_sort(array,drawArray,timespeed):
+    size = len(array)
+    for i in range(size-1):
+        for j in range(size-i-1):
+            if array[j] > array[j+1]:
+                array[j],array[j+1] = array[j+1],array[j]
+                drawArray(array,[color['YELLOW'] if x ==j or x==j+1 
+                else color["BLUE"] for x in range(len(array))])
+                time.sleep(timespeed)
+
+    drawArray(array,[color['BLUE'] for x in range(len(array))])
 
 # Bogo Sort
 
@@ -120,20 +147,6 @@ def shuffle(array,drawArray,timespeed):
 
 def selection_sort(array,drawArray,timespeed):
     pass
-
-# Bubble Sort
-
-def bubble_sort(array,drawArray,timespeed):
-    size = len(array)
-    for i in range(size-1):
-        for j in range(size-i-1):
-            if array[j] > array[j+1]:
-                array[j],array[j+1] = array[j+1],array[j]
-                drawArray(array,[color['YELLOW'] if x ==j or x==j+1 
-                else color["BLUE"] for x in range(len(array))])
-                time.sleep(timespeed)
-
-    drawArray(array,[color['BLUE'] for x in range(len(array))])
 
 # Merge Sort
 
@@ -195,14 +208,21 @@ speedMenu = ttk.Combobox(uiFrame,textvariable=speed_name,values=speed_list)
 speedMenu.grid(row=1,column=2,padx=5,pady=5)
 speedMenu.current(0)
 
-generateButton = Button(uiFrame,text='Generate Array',command=generate,bg=color['WHITE'])
-generateButton.grid(row=2,column=0,padx=10,pady=10)
+generateButton = Button(uiFrame,text='Generate',command=generate,bg=color['WHITE'])
+generateButton.grid(row=2,column=0,padx=12,pady=10)
+generateButton.config(width=12)
 
-sortButton = Button(uiFrame,text='Sort',command=sort,bg=color['WHITE'],width=10)
-sortButton.grid(row=2,column=1,padx=10,pady=10)
+sortButton = Button(uiFrame,text='Sort',command=swithchon,bg=color['WHITE'])
+sortButton.grid(row=2,column=1,padx=12,pady=10)
+sortButton.config(width=12)
 
-sortButton = Button(uiFrame,text='Stop',command=stop,bg=color['WHITE'],width=10)
-sortButton.grid(row=2,column=2,padx=10,pady=10)
+stopButton = Button(uiFrame,text='Stop',command=stop,bg=color['WHITE'])
+stopButton.grid(row=2,column=2,padx=12,pady=10)
+stopButton.config(width=12)
+
+exitButton = Button(uiFrame,text='Exit',command=exit,bg=color['WHITE'],background=color['RED'],fg=color['WHITE'])
+exitButton.grid(row=2,column=3,padx=12,pady=10)
+exitButton.config(width=12)
 
 visualCanvas = Canvas(mainWindow,width=800,height=400,bg=color['WHITE'])
 visualCanvas.grid(row=3 ,column=0,padx=10,pady=10)
