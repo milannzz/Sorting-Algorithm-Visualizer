@@ -20,7 +20,8 @@ color = {
     "PINK" : '#F50BED',
     "LIGHT_GREEN" : '#05F50E',
     "PURPLE" : '#BF01FB',
-    "RED" : '#FF0000'
+    "RED" : '#FF0000',
+    "ORANGE" : '#FFA500'
 }
 
 # <--- Main Window --->
@@ -31,10 +32,10 @@ mainWindow.maxsize(1000,700)
 mainWindow.config(bg=color["LIGHT_GRAY"])
 
 algo_name = StringVar()
-algo_list = ['Bubble Sort','Merge Sort','Bogo Sort']
+algo_list = ['Bubble Sort','Merge Sort','Bogo Sort','Selection Sort']
 
 speed_name = StringVar()
-speed_list = ['Fast','Medium','Slow']
+speed_list = ["Real-Time",'Fast','Medium','Slow','Slowest']
 
 array = []
 
@@ -61,6 +62,7 @@ def drawArray (array,colorArray):
 def generate():
     global array
     array = []
+
     for i in range(0,100):
         randomval = random.randint(1,150)
         array.append(randomval)
@@ -68,12 +70,16 @@ def generate():
 
 
 def setspeed():
-    if speedMenu.get() == 'Slow':
+    if speedMenu.get() == 'Slowest':
+        return 0.600
+    elif speedMenu.get() == 'Slow':
         return 0.300
     elif speedMenu.get() == 'Medium':
         return 0.100
-    else:
+    elif speedMenu.get() == 'Fast':
         return 0.001
+    else:
+        return 0
 
 def sort():
     global array
@@ -85,6 +91,8 @@ def sort():
         merge_sort(array,0,len(array)-1,drawArray,timespeed)
     elif algoMenu.get() == 'Bogo Sort':
         bogo_sort(array,drawArray,timespeed)
+    elif algoMenu.get() == 'Selection Sort':
+        selection_sort(array,drawArray,timespeed)
 
 def swithchon():
     global switch
@@ -112,7 +120,7 @@ def bubble_sort(array,drawArray,timespeed):
         for j in range(size-i-1):
             if array[j] > array[j+1]:
                 array[j],array[j+1] = array[j+1],array[j]
-                drawArray(array,[color['YELLOW'] if x ==j or x==j+1 
+                drawArray(array,[color['ORANGE'] if x ==j or x==j+1 
                 else color["BLUE"] for x in range(len(array))])
                 time.sleep(timespeed)
 
@@ -137,7 +145,7 @@ def shuffle(array,drawArray,timespeed):
     for i in range (0,size):
         r = random.randint(0,size-1)
         array[i],array[r] = array[r],array[i]
-        drawArray(array,[color["YELLOW"] if x == i or x == r 
+        drawArray(array,[color["ORANGE"] if x == i or x == r 
         else color['BLUE'] for x in range(len(array))])
         time.sleep(timespeed)
     
@@ -145,8 +153,30 @@ def shuffle(array,drawArray,timespeed):
 
 # Selection Sort
 
-def selection_sort(array,drawArray,timespeed):
-    pass
+def selection_sort(L,drawArray,timespeed):
+    for i in range(len(L)-1):
+        min_index = i
+        for j in range(i+1, len(L)):
+            if L[j] < L[min_index]:
+                min_index = j
+            drawArray(array,[color['PURPLE'] if x == j 
+            else color['ORANGE'] if x == i 
+            else color['YELLOW'] if x == min_index 
+            else color['BLUE'] for x in range(len(array))])
+        
+        drawArray(array,[color['ORANGE'] if  x==i 
+                else color['YELLOW'] if  x==min_index 
+                else color["BLUE"] for x in range(len(array))])
+
+        L[i], L[min_index] = L[min_index], L[i]
+
+        drawArray(array,[color['YELLOW'] if  x==i 
+                else color['ORANGE'] if  x==min_index 
+                else color["BLUE"] for x in range(len(array))])
+        time.sleep(timespeed)
+
+    drawArray(array,[color['BLUE'] for x in range(len(array))])
+
 
 # Merge Sort
 
@@ -182,8 +212,8 @@ def merge_sort(array,start,end,drawArray,timespeed):
         merge(array,start,mid,end,drawArray,timespeed)
 
         drawArray(array,[color["PURPLE"] if x >=start 
-            and x < mid else color['YELLOW'] if x==mid 
-            else color['DARK_BLUE'] if x >mid and x<=end 
+            and x < mid else color['ORANGE'] if x==mid 
+            else color['YELLOW'] if x >mid and x<=end 
             else color['BLUE'] for x in range(len(array))])
         
         time.sleep(timespeed)
@@ -206,7 +236,7 @@ uiSpeed = Label(uiFrame,text='Speed: ',bg=color['WHITE'])
 uiSpeed.grid(row=1,column=0,padx=10,pady=5,sticky=W)
 speedMenu = ttk.Combobox(uiFrame,textvariable=speed_name,values=speed_list)
 speedMenu.grid(row=1,column=2,padx=5,pady=5)
-speedMenu.current(0)
+speedMenu.current(1)
 
 generateButton = Button(uiFrame,text='Generate',command=generate,bg=color['WHITE'])
 generateButton.grid(row=2,column=0,padx=12,pady=10)
