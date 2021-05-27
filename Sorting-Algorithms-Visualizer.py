@@ -116,8 +116,10 @@ def exit():
 
 def bubble_sort(array,drawArray,timespeed):
     size = len(array)
+    mainWindow.update()
     for i in range(size-1):
         for j in range(size-i-1):
+            mainWindow.update()
             if array[j] > array[j+1]:
                 array[j],array[j+1] = array[j+1],array[j]
                 drawArray(array,[color['ORANGE'] if x ==j or x==j+1 
@@ -130,19 +132,24 @@ def bubble_sort(array,drawArray,timespeed):
 
 def bogo_sort(array,drawArray,timespeed):
     size = len(array)
+    mainWindow.update()
     while(is_sorted(array,drawArray,timespeed)==False):
         shuffle(array,drawArray,timespeed)
     
 def is_sorted(array,drawArray,timespeed):
     size = len(array)
+    mainWindow.update()
     for i in range (0,size-1):
         if(array[i] > array[i-1]):
             return False    
     return True
 
 def shuffle(array,drawArray,timespeed):
+    mainWindow.update()
     size = len(array)
+    mainWindow.update()
     for i in range (0,size):
+        mainWindow.update()
         r = random.randint(0,size-1)
         array[i],array[r] = array[r],array[i]
         drawArray(array,[color["ORANGE"] if x == i or x == r 
@@ -154,9 +161,12 @@ def shuffle(array,drawArray,timespeed):
 # Selection Sort
 
 def selection_sort(L,drawArray,timespeed):
+    mainWindow.update()
     for i in range(len(L)-1):
+        mainWindow.update()
         min_index = i
         for j in range(i+1, len(L)):
+            mainWindow.update()
             if L[j] < L[min_index]:
                 min_index = j
             drawArray(array,[color['PURPLE'] if x == j 
@@ -181,6 +191,7 @@ def selection_sort(L,drawArray,timespeed):
 # Merge Sort
 
 def merge(data, start, mid, end, drawData, timeTick):
+    mainWindow.update()
     p = start
     q = mid + 1
     tempArray = []
@@ -204,6 +215,7 @@ def merge(data, start, mid, end, drawData, timeTick):
         start += 1
 
 def merge_sort(array,start,end,drawArray,timespeed):
+    mainWindow.update()
     if start<end:
         mid = int((start+end)/2)
         merge_sort(array,start,mid,drawArray,timespeed)
