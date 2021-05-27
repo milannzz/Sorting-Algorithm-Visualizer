@@ -1,6 +1,11 @@
 # Sorting-Algorithm-Visualizer-in-Python
 The human brain can easily process visuals instead of long codes to understand the algorithms. In this article, a program that program visualizes the different sort Algorithm has been implemented.
 
+**Technology Used -**
+1. Python
+2. Tkinter
+3. Pyinstaller
+
 **How To use -**
 1. open Sorting-Algorithms-Visualizer.exe.
 2. click generate to create a random array.
