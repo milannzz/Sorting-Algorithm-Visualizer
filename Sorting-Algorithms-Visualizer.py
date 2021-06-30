@@ -2,7 +2,6 @@ from math import fabs
 from tkinter import *
 from tkinter import ttk
 import random
-import time
 
 # Clearer Ui using ctypes
 import ctypes
