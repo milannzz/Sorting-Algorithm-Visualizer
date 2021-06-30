@@ -2,7 +2,6 @@ from math import fabs
 from tkinter import *
 from tkinter import ttk
 import random
-import time
 
 # Clearer Ui using ctypes
 import ctypes
@@ -24,21 +23,6 @@ color = {
     "ORANGE" : '#FFA500'
 }
 
-# <--- Main Window --->
-
-mainWindow = Tk()
-mainWindow.title("Sorting Algorithms Visualizer")
-mainWindow.maxsize(1000,700)
-mainWindow.config(bg=color["LIGHT_GRAY"])
-
-algo_name = StringVar()
-algo_list = ['Bubble Sort','Merge Sort','Selection Sort','Bogo Sort']
-
-speed_name = StringVar()
-speed_list = ["Real-Time",'Fast','Medium','Slow','Slowest']
-
-array = []
-
 # <--- Functions/definations --->
 
 def drawArray (array,colorArray):
@@ -53,7 +37,7 @@ def drawArray (array,colorArray):
     for i,height in enumerate(normalizedArray):
         x0 = i*x_width + offset + spacing
         y0 = canvas_height - height*390
-        x1 = (i+1)*x_width+offset
+        x1 = (i+1)*x_width + offset
         y1 = canvas_height
         visualCanvas.create_rectangle(x0,y0,x1,y1,fill=colorArray[i]) 
     
@@ -91,6 +75,8 @@ def sort():
         Algorithms.bogo_sort(array,drawArray,timespeed)
     elif algoMenu.get() == 'Selection Sort':
         Algorithms.selection_sort(array,drawArray,timespeed)
+    elif algoMenu.get() == 'Insertion Sort':
+        Algorithms.insertion_sort(array,drawArray,timespeed)
 
 def swithchon():
     global switch
@@ -112,6 +98,27 @@ def exit():
 
 class Algorithms:
 
+    def insertion_sort(array,drawarray,timespeed):
+        global switch
+        mainWindow.update()
+        size = len(array)
+        for i in range(1,size):
+            key = array[i]
+            j = i-1
+            while key < array[j] and j>=0:
+                mainWindow.update()
+                if(switch == False):
+                    return
+                array[j+1] = array[j]
+                j-=1
+                mainWindow.after(timespeed,
+                    drawArray(array,[color['ORANGE'] if x == i else color["YELLOW"] if x == j 
+                    else color["BLUE"] for x in range(len(array))]))
+            array[j+1] = key
+
+        drawArray(array,[color['BLUE'] for x in range(len(array))])
+
+
     def bubble_sort(array,drawArray,timespeed):
         global switch
         mainWindow.update()
@@ -124,8 +131,8 @@ class Algorithms:
                 if array[j] > array[j+1]:
                     array[j],array[j+1] = array[j+1],array[j]
                     mainWindow.after(timespeed,
-                    drawArray(array,[color['ORANGE'] if x ==j or x==j+1 
-                    else color["BLUE"] for x in range(len(array))]))
+                        drawArray(array,[color['ORANGE'] if x ==j else color["YELLOW"] if x == j+1 
+                        else color["BLUE"] for x in range(len(array))]))
 
         drawArray(array,[color['BLUE'] for x in range(len(array))])
 
@@ -156,8 +163,9 @@ class Algorithms:
                 return
             r = random.randint(0,size-1)
             array[i],array[r] = array[r],array[i]
-            mainWindow.after(timespeed,drawArray(array,[color["ORANGE"] if x == i or x == r 
-                                                        else color['BLUE'] for x in range(len(array))]))
+            mainWindow.after(timespeed,
+                drawArray(array,[color["ORANGE"] if  x == r 
+                else color['BLUE'] for x in range(len(array))]))
         
         drawArray(array,[color['BLUE'] for x in range(len(array))])
 
@@ -246,36 +254,49 @@ class Algorithms:
 
 # <--- UI elements here --->
 
-uiFrame = Frame(mainWindow,width=900,height=300,bg=color['WHITE'])
-uiFrame.grid(row=0,column=0,padx=10,pady=5)
+mainWindow = Tk()
+mainWindow.title("Sorting Algorithms Visualizer")
+mainWindow.maxsize(1000,700)
+mainWindow.config(bg=color["LIGHT_GRAY"])
+mainWindow.grid_columnconfigure(0,weight=1)
 
-uiAlgos = Label(uiFrame,text='Algorithms: ',bg=color['WHITE'])
-uiAlgos.grid(row=0,column=0,padx=10,pady=5,sticky=W)
+algo_name = StringVar()
+algo_list = ['Bubble Sort','Merge Sort','Selection Sort',"Insertion Sort",'Bogo Sort']
+
+speed_name = StringVar()
+speed_list = ["Real-Time",'Fast','Medium','Slow','Slowest']
+
+array = []
+
+uiFrame = Frame(mainWindow,bg=color['WHITE'])
+uiFrame.grid(row=0,column=0,padx=10,pady=5)
+uiFrame.grid_columnconfigure(0, weight=1)
+
+uiAlgos = Label(uiFrame,text='Algorithms : ',bg=color['WHITE'])
+uiAlgos.grid(row=0,column=0,padx=12,pady=10,sticky=W)
+
 algoMenu = ttk.Combobox(uiFrame,textvariable=algo_name,values=algo_list)
-algoMenu.grid(row=0,column=2,padx=5,pady=5)
+algoMenu.grid(row=0,column=2,padx=12,pady=10)
 algoMenu.current(0)
 
-uiSpeed = Label(uiFrame,text='Speed: ',bg=color['WHITE'])
-uiSpeed.grid(row=1,column=0,padx=10,pady=5,sticky=W)
+uiSpeed = Label(uiFrame,text='Speed :',bg=color['WHITE'])
+uiSpeed.grid(row=1,column=0,padx=12,pady=10,sticky=W)
+
 speedMenu = ttk.Combobox(uiFrame,textvariable=speed_name,values=speed_list)
-speedMenu.grid(row=1,column=2,padx=5,pady=5)
+speedMenu.grid(row=1,column=2,padx=12,pady=10)
 speedMenu.current(1)
 
-generateButton = Button(uiFrame,text='Generate',command=generate,bg=color['WHITE'])
+generateButton = Button(uiFrame,text='Generate',command=generate,bg=color['WHITE'],width=14)
 generateButton.grid(row=2,column=0,padx=12,pady=10)
-generateButton.config(width=12)
 
-sortButton = Button(uiFrame,text='Sort',command=swithchon,bg=color['WHITE'])
+sortButton = Button(uiFrame,text='Sort',command=swithchon,bg=color['WHITE'],width=14)
 sortButton.grid(row=2,column=1,padx=12,pady=10)
-sortButton.config(width=12)
 
-stopButton = Button(uiFrame,text='Stop',command=stop,bg=color['WHITE'])
+stopButton = Button(uiFrame,text='Stop',command=stop,bg=color['WHITE'],width=14)
 stopButton.grid(row=2,column=2,padx=12,pady=10)
-stopButton.config(width=12)
 
-exitButton = Button(uiFrame,text='Exit',command=exit,bg=color['WHITE'],background=color['RED'],fg=color['WHITE'])
+exitButton = Button(uiFrame,text='Exit',command=exit,bg=color['WHITE'],background=color['RED'],fg=color['WHITE'],width=14)
 exitButton.grid(row=2,column=3,padx=12,pady=10)
-exitButton.config(width=12)
 
 visualCanvas = Canvas(mainWindow,width=800,height=400,bg=color['WHITE'])
 visualCanvas.grid(row=3 ,column=0,padx=10,pady=10)

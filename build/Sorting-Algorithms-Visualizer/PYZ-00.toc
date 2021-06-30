@@ -1,4 +1,5 @@
-('H:\\VScode\\Pythons_Scripts\\Sorting-Algorithm-Visualizer-in-Python\\build\\Sorting-Algorithms-Visualizer\\PYZ-00.pyz',
+('H:\\Programing '
+ 'Projects\\VScode\\Pythons_Scripts\\Sorting-Algorithm-Visualizer-in-Python\\build\\Sorting-Algorithms-Visualizer\\PYZ-00.pyz',
  [('os',
    'c:\\users\\milan '
    'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\os.py',
@@ -883,13 +884,13 @@
    'c:\\users\\milan '
    'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\__init__.py',
    'PYMODULE'),
-  ('stringprep',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\stringprep.py',
-   'PYMODULE'),
   ('_py_abc',
    'c:\\users\\milan '
    'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\_py_abc.py',
+   'PYMODULE'),
+  ('stringprep',
+   'c:\\users\\milan '
+   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\stringprep.py',
    'PYMODULE'),
   ('tracemalloc',
    'c:\\users\\milan '

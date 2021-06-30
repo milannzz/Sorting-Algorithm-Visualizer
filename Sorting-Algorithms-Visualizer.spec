@@ -5,7 +5,7 @@ block_cipher = None
 
 
 a = Analysis(['Sorting-Algorithms-Visualizer.py'],
-             pathex=['H:\\VScode\\Pythons_Scripts\\Sorting-Algorithm-Visualizer-in-Python'],
+             pathex=['H:\\Programing Projects\\VScode\\Pythons_Scripts\\Sorting-Algorithm-Visualizer-in-Python'],
              binaries=[],
              datas=[],
              hiddenimports=[],
