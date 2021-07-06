@@ -1,4 +1,3 @@
-from math import fabs
 from tkinter import *
 from tkinter import ttk
 import random
@@ -27,16 +26,16 @@ color = {
 
 def drawArray (array,colorArray):
     visualCanvas.delete("all")
-    canvas_width = 800
-    canvas_height = 400
+    canvas_width = 980
+    canvas_height = 480
     x_width = canvas_width /(len(array)+1)
     offset = 4
     spacing = 2
-    normalizedArray = [i/max(array) for i in array]
+    normalizedArray = [i/max(array) for i in array] 
 
     for i,height in enumerate(normalizedArray):
         x0 = i*x_width + offset + spacing
-        y0 = canvas_height - height*390
+        y0 = canvas_height - height*470
         x1 = (i+1)*x_width + offset
         y1 = canvas_height
         visualCanvas.create_rectangle(x0,y0,x1,y1,fill=colorArray[i]) 
@@ -77,6 +76,8 @@ def sort():
         Algorithms.selection_sort(array,drawArray,timespeed)
     elif algoMenu.get() == 'Insertion Sort':
         Algorithms.insertion_sort(array,drawArray,timespeed)
+    elif algoMenu.get() == 'Quick Sort':
+        Algorithms.quick_sort(array,0,len(array)-1,drawArray,timespeed)
 
 def swithchon():
     global switch
@@ -98,9 +99,63 @@ def exit():
 
 class Algorithms:
 
+
+    def quick_sort(array,start,end,drawarray,timespeed):
+        global switch
+        mainWindow.update()
+        if(switch == False):
+            return
+        if start < end :
+            mainWindow.update()
+            if(switch == False):
+                return
+
+            pivot = Algorithms.partition(array,start,end,drawArray,timespeed)
+
+            mainWindow.after(timespeed,drawArray(array,[color["PURPLE"] if x >= start 
+                and x < pivot else color['ORANGE'] if x == pivot 
+                else color['YELLOW'] if x >pivot and x <= end 
+                else color['BLUE'] for x in range(len(array))]))
+
+            Algorithms.quick_sort(array,start,pivot-1,drawArray,timespeed)
+            mainWindow.update()
+            if(switch == False):
+                return
+            Algorithms.quick_sort(array,pivot+1,end,drawArray,timespeed)
+
+            mainWindow.after(timespeed,drawArray(array,[color["PURPLE"] if x >=start 
+                and x < pivot else color['ORANGE'] if x==pivot
+                else color['YELLOW'] if x >pivot and x<=end 
+                else color['BLUE'] for x in range(len(array))]))
+
+        drawArray(array,[color['BLUE'] for x in range(len(array))])
+
+    def partition(array,start,end,drawarray,timespeed):
+        global switch
+        mainWindow.update()
+        if(switch == False):
+            return
+
+        pivot = end
+        pi = array[end]
+        i = start-1
+        for j in range(start,end):
+
+            mainWindow.update()
+            if(switch == False):
+                return
+
+            if array[j] < pi:
+                i+=1
+                array[i],array[j] = array[j],array[i]
+        array[i+1],array[pivot] = array[pivot],array[i+1]
+        return i+1
+
+
     def insertion_sort(array,drawarray,timespeed):
         global switch
         mainWindow.update()
+
         size = len(array)
         for i in range(1,size):
             key = array[i]
@@ -109,12 +164,13 @@ class Algorithms:
                 mainWindow.update()
                 if(switch == False):
                     return
+
                 array[j+1] = array[j]
                 j-=1
-                mainWindow.after(timespeed,
-                    drawArray(array,[color['ORANGE'] if x == i else color["YELLOW"] if x == j 
+                mainWindow.after(timespeed,drawArray(array,[color['ORANGE'] if x == i else color["YELLOW"] if x == j 
                     else color["BLUE"] for x in range(len(array))]))
             array[j+1] = key
+            
 
         drawArray(array,[color['BLUE'] for x in range(len(array))])
 
@@ -128,6 +184,7 @@ class Algorithms:
                 mainWindow.update()
                 if(switch == False):
                     return
+
                 if array[j] > array[j+1]:
                     array[j],array[j+1] = array[j+1],array[j]
                     mainWindow.after(timespeed,
@@ -141,7 +198,7 @@ class Algorithms:
     def bogo_sort(array,drawArray,timespeed):
         size = len(array)
         mainWindow.update()
-        while(Algorithms.is_sorted(array,drawArray,timespeed)==False):
+        while(Algorithms.is_sorted(array,drawArray,timespeed) == False):
             Algorithms.shuffle(array,drawArray,timespeed)
         
     def is_sorted(array,drawArray,timespeed):
@@ -155,16 +212,18 @@ class Algorithms:
     def shuffle(array,drawArray,timespeed):
         global switch
         mainWindow.update()
+
         size = len(array)
         mainWindow.update()
         for i in range (0,size):
             mainWindow.update()
             if(switch == False):
                 return
+
             r = random.randint(0,size-1)
             array[i],array[r] = array[r],array[i]
             mainWindow.after(timespeed,
-                drawArray(array,[color["ORANGE"] if x == i or x == r 
+                drawArray(array,[color["ORANGE"] if  x == r 
                 else color['BLUE'] for x in range(len(array))]))
         
         drawArray(array,[color['BLUE'] for x in range(len(array))])
@@ -179,12 +238,13 @@ class Algorithms:
                 mainWindow.update()
                 if(switch == False):
                     return
+
                 if L[j] < L[min_index]:
                     min_index = j
                 drawArray(array,[color['PURPLE'] if x == j 
-                else color['ORANGE'] if x == i 
-                else color['YELLOW'] if x == min_index 
-                else color['BLUE'] for x in range(len(array))])
+                    else color['ORANGE'] if x == i 
+                    else color['YELLOW'] if x == min_index 
+                    else color['BLUE'] for x in range(len(array))])
             
             drawArray(array,[color['ORANGE'] if  x==i 
                     else color['YELLOW'] if  x==min_index 
@@ -207,30 +267,42 @@ class Algorithms:
             return
         if start<end:
             mid = int((start+end)/2)
-            Algorithms.merge_sort(array,start,mid,drawArray,timespeed)
-            Algorithms.merge_sort(array,mid+1,end,drawArray,timespeed)
-            Algorithms.merge(array,start,mid,end,drawArray,timespeed)
 
             mainWindow.after(timespeed,drawArray(array,[color["PURPLE"] if x >=start 
                 and x < mid else color['ORANGE'] if x==mid 
                 else color['YELLOW'] if x >mid and x<=end 
                 else color['BLUE'] for x in range(len(array))]))
+
+            Algorithms.merge_sort(array,start,mid,drawArray,timespeed)
+            mainWindow.update()
+            if(switch == False):
+                return
+            Algorithms.merge_sort(array,mid+1,end,drawArray,timespeed)
+
+            mainWindow.after(timespeed,drawArray(array,[color["PURPLE"] if x >=start 
+                and x < mid else color['ORANGE'] if x==mid 
+                else color['YELLOW'] if x >mid and x<=end 
+                else color['BLUE'] for x in range(len(array))]))
+
+            Algorithms.merge(array,start,mid,end,drawArray,timespeed)
         
         drawArray(array,[color["BLUE"] for x in range(len(array))])
 
-    def merge(data, start, mid, end, drawData, timeTick):
+    def merge(data, start, mid, end, drawData, timespeed):
         global switch
         mainWindow.update()
         if(switch == False):
             return
+
         p = start
         q = mid + 1
         tempArray = []
-
+        
         for i in range(start, end+1):
             mainWindow.update()
             if(switch == False):
                 return
+
             if p > mid:
                 tempArray.append(data[q])
                 q+=1
@@ -248,6 +320,7 @@ class Algorithms:
             mainWindow.update()
             if(switch == False):
                 return
+
             data[start] = tempArray[p]
             start += 1
 
@@ -256,19 +329,20 @@ class Algorithms:
 
 mainWindow = Tk()
 mainWindow.title("Sorting Algorithms Visualizer")
-mainWindow.maxsize(1000,700)
+mainWindow.geometry("980x660")
 mainWindow.config(bg=color["LIGHT_GRAY"])
 mainWindow.grid_columnconfigure(0,weight=1)
+mainWindow.grid_rowconfigure(0,weight=1)
 
 algo_name = StringVar()
-algo_list = ['Bubble Sort','Merge Sort','Selection Sort',"Insertion Sort",'Bogo Sort']
+algo_list = ['Quick Sort','Merge Sort','Bubble Sort','Selection Sort',"Insertion Sort",'Bogo Sort']
 
 speed_name = StringVar()
 speed_list = ["Real-Time",'Fast','Medium','Slow','Slowest']
 
 array = []
 
-uiFrame = Frame(mainWindow,bg=color['WHITE'])
+uiFrame = Frame(mainWindow ,bg=color['WHITE'])
 uiFrame.grid(row=0,column=0,padx=10,pady=5)
 uiFrame.grid_columnconfigure(0, weight=1)
 
@@ -298,7 +372,7 @@ stopButton.grid(row=2,column=2,padx=12,pady=10)
 exitButton = Button(uiFrame,text='Exit',command=exit,bg=color['WHITE'],background=color['RED'],fg=color['WHITE'],width=14)
 exitButton.grid(row=2,column=3,padx=12,pady=10)
 
-visualCanvas = Canvas(mainWindow,width=800,height=400,bg=color['WHITE'])
+visualCanvas = Canvas(mainWindow,width=980,height=480,bg=color['WHITE'])
 visualCanvas.grid(row=3 ,column=0,padx=10,pady=10)
 
 # <--- Print Main Window --->
