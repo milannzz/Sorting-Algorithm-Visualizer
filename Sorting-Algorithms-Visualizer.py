@@ -340,6 +340,7 @@ algo_list = ['Quick Sort','Merge Sort','Bubble Sort','Selection Sort',"Insertion
 speed_name = StringVar()
 speed_list = ["Real-Time",'Fast','Medium','Slow','Slowest']
 
+# Main Array
 array = []
 
 uiFrame = Frame(mainWindow ,bg=color['WHITE'])
