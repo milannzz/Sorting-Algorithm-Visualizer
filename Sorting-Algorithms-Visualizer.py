@@ -78,6 +78,8 @@ def sort():
         Algorithms.insertion_sort(array,drawArray,timespeed)
     elif algoMenu.get() == 'Quick Sort':
         Algorithms.quick_sort(array,0,len(array)-1,drawArray,timespeed)
+    elif algoMenu.get() == 'Odd Even Sort':
+        pass
 
 def swithchon():
     global switch
@@ -98,7 +100,8 @@ def exit():
 # <--- Algorithms --->
 
 class Algorithms:
-
+    def odd_even_sort():
+        pass
 
     def quick_sort(array,start,end,drawarray,timespeed):
         global switch
@@ -335,7 +338,7 @@ mainWindow.grid_columnconfigure(0,weight=1)
 mainWindow.grid_rowconfigure(0,weight=1)
 
 algo_name = StringVar()
-algo_list = ['Quick Sort','Merge Sort','Bubble Sort','Selection Sort',"Insertion Sort",'Bogo Sort']
+algo_list = ['Quick Sort','Merge Sort',"Odd Even Sort",'Bubble Sort','Selection Sort',"Insertion Sort",'Bogo Sort']
 
 speed_name = StringVar()
 speed_list = ["Real-Time",'Fast','Medium','Slow','Slowest']
