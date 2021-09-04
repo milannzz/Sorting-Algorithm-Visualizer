@@ -11,5 +11,6 @@ color = {
     "LIGHT_GREEN" : '#05F50E', 
     "PURPLE" : '#BF01FB', 
     "RED" : '#FF0000', 
-    "ORANGE" : '#FFA500'
+    "ORANGE" : '#FFA500',
+    "GREEN" : '#00FF00'
 }

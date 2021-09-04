@@ -28,10 +28,11 @@ def drawArray (array, colorArray):
     mainWindow.update_idletasks()
 
 def generate():
+    array_size = noofitems.get()
     global array
     array = []
-    for i in range(0, 100):
-        randomval = random.randint(1, 150)
+    for row in range(0, array_size):
+        randomval = random.randint(0, 200)
         array.append(randomval)
     drawArray(array, [color['BLUE'] for x in range(len(array))])
 
@@ -64,12 +65,12 @@ def sort():
     elif algoMenu.get() == 'Quick Sort':
         Algorithms.quick_sort(array, 0, len(array) - 1, drawArray, timespeed)
     elif algoMenu.get() == 'Odd Even Sort':
-        pass
+        Algorithms.odd_even_sort(array, drawArray, timespeed)
 
 def swithchon():
     global switch
     switch = True
-    sort()
+    sort() 
 
 def stop():
     global switch
@@ -82,11 +83,40 @@ def exit():
 # <--- Algorithms --->
 
 class Algorithms:
-    def odd_even_sort():
-        pass
+    global switch
+    def odd_even_sort(array, drawArray, timespeed):
+        mainWindow.update()
+        if(switch == False):
+            return
+        isSorted = 0
+        while isSorted == 0:
+            mainWindow.update()
+            if(switch == False):
+                return
+            isSorted = 1
+            temp = 0
+            for i in range(1, len(array) - 1, 2):
+                mainWindow.update()
+                if(switch == False):
+                    return
+                if array[i] > array[i + 1]:
+                    array[i], array[i + 1] = array[i + 1], array[i]
+                    isSorted = 0
+                    mainWindow.after(timespeed, drawArray(array, [color['ORANGE'] if  x == i else color["YELLOW"] if x == i + 1 
+                    else color["BLUE"] for x in range(len(array))]))
+                    
+            for i in range(0, len(array) - 1, 2):
+                mainWindow.update()
+                if(switch == False):
+                    return
+                if array[i] > array[i + 1]:
+                    array[i], array[i + 1] = array[i + 1], array[i]
+                    isSorted = 0
+                    mainWindow.after(timespeed, drawArray(array, [color['ORANGE'] if x == i else color["YELLOW"] if x == i + 1 
+                    else color["BLUE"] for x in range(len(array))]))
+            
 
     def quick_sort(array, start, end, drawarray, timespeed):
-        global switch
         mainWindow.update()
         if(switch == False):
             return
@@ -116,11 +146,9 @@ class Algorithms:
         drawArray(array, [color['BLUE'] for x in range(len(array))])
 
     def partition(array, start, end, drawarray, timespeed):
-        global switch
         mainWindow.update()
         if(switch == False):
             return
-
         pivot = end
         pi = array[end]
         i = start - 1
@@ -138,7 +166,6 @@ class Algorithms:
 
 
     def insertion_sort(array, drawarray, timespeed):
-        global switch
         mainWindow.update()
 
         size = len(array)
@@ -150,7 +177,7 @@ class Algorithms:
                 if(switch == False):
                     return
 
-                array[j+1] = array[j]
+                array[j + 1] = array[j]
                 j -= 1
                 mainWindow.after(timespeed, drawArray(array, [color['ORANGE'] if x == i else color["YELLOW"] if x == j 
                     else color["BLUE"] for x in range(len(array))]))
@@ -160,7 +187,6 @@ class Algorithms:
 
 
     def bubble_sort(array, drawArray, timespeed):
-        global switch
         mainWindow.update()
         size = len(array)
         for i in range(size - 1):
@@ -171,10 +197,9 @@ class Algorithms:
 
                 if array[j] > array[j + 1]:
                     array[j], array[j + 1] = array[j + 1], array[j]
-                    mainWindow.after(timespeed, 
-                        drawArray(array, [color['ORANGE'] if x == j else color["YELLOW"] if x == j + 1 
-                        else color["BLUE"] for x in range(len(array))]))
-
+                    mainWindow.after(timespeed, drawArray(array, [color['ORANGE'] if x == j 
+                            else color["YELLOW"] if x == j + 1
+                            else color["BLUE"] for x in range(len(array))]))
         drawArray(array, [color['BLUE'] for x in range(len(array))])
 
 
@@ -194,7 +219,6 @@ class Algorithms:
         return True
 
     def shuffle(array, drawArray, timespeed):
-        global switch
         mainWindow.update()
 
         size = len(array)
@@ -215,10 +239,9 @@ class Algorithms:
 
 
     def selection_sort(L, drawArray, timespeed):
-        global switch
-        for i in range(len(L)-1):
+        for i in range(len(L) - 1):
             min_index = i
-            for j in range(i+1,  len(L)):
+            for j in range(i + 1,  len(L)):
                 mainWindow.update()
                 if(switch == False):
                     return
@@ -245,7 +268,6 @@ class Algorithms:
 
 
     def merge_sort(array, start, end, drawArray, timespeed):
-        global switch
         mainWindow.update()
         if(switch == False):
             return
@@ -261,7 +283,7 @@ class Algorithms:
             mainWindow.update()
             if(switch == False):
                 return
-            Algorithms.merge_sort(array, mid+1, end, drawArray, timespeed)
+            Algorithms.merge_sort(array, mid + 1, end, drawArray, timespeed)
 
             mainWindow.after(timespeed, drawArray(array, [color["PURPLE"] if x >=start 
                 and x < mid else color['ORANGE'] if x == mid 
@@ -272,8 +294,7 @@ class Algorithms:
         
         drawArray(array, [color["BLUE"] for x in range(len(array))])
 
-    def merge(data,  start,  mid,  end,  drawData,  timespeed):
-        global switch
+    def merge(data,  start,  mid,  end,  drawArray,  timespeed):
         mainWindow.update()
         if(switch == False):
             return
@@ -313,7 +334,7 @@ class Algorithms:
 
 mainWindow = Tk()
 mainWindow.title("Sorting Algorithms Visualizer")
-mainWindow.geometry("980x660")
+mainWindow.geometry("980x710")
 mainWindow.resizable(0,0)
 mainWindow.config(bg = color["LIGHT_GRAY"])
 mainWindow.grid_columnconfigure(0, weight = 1)
@@ -327,39 +348,47 @@ speed_list = ["Real-Time", 'Fast', 'Medium', 'Slow', 'Slowest']
 
 # Main Array
 array  =  []
+noofitems = IntVar()
+noofitems.set(100)
 
 uiFrame  =  Frame(mainWindow , bg = color['WHITE'])
 uiFrame.grid(row = 0, column = 0, padx = 10, pady = 5)
 uiFrame.grid_columnconfigure(0,  weight = 1)
 
-uiAlgos  =  Label(uiFrame, text = 'Algorithms : ', bg = color['WHITE'])
+uiAlgos  =  Label(uiFrame, text = 'Algorithms: ', bg = color['WHITE'])
 uiAlgos.grid(row = 0, column = 0, padx = 12, pady = 10, sticky = W)
 
 algoMenu  =  ttk.Combobox(uiFrame, textvariable = algo_name, values = algo_list)
 algoMenu.grid(row = 0, column = 2, padx = 12, pady = 10)
 algoMenu.current(0)
 
-uiSpeed  =  Label(uiFrame, text = 'Speed :', bg = color['WHITE'])
+uiSpeed  =  Label(uiFrame, text = 'Speed:', bg = color['WHITE'])
 uiSpeed.grid(row = 1, column = 0, padx = 12, pady = 10, sticky = W)
 
 speedMenu  =  ttk.Combobox(uiFrame, textvariable = speed_name, values = speed_list)
 speedMenu.grid(row = 1, column = 2, padx = 12, pady = 10)
 speedMenu.current(1)
 
+uiNoOfColumns  =  Label(uiFrame, text = 'Number of Columns:', bg = color['WHITE'])
+uiNoOfColumns.grid(row = 2, column = 0, padx = 12, pady = 10, sticky = W)
+
+entryNoOfColumns = Entry(uiFrame, textvariable = noofitems, bg = color["WHITE"],width = 23)
+entryNoOfColumns.grid(row = 2, column = 2, padx = 12, pady = 10, sticky = W)
+
 generateButton  =  Button(uiFrame, text = 'Generate', command = generate, bg = color['WHITE'], width = 14)
-generateButton.grid(row = 2, column = 0, padx = 12, pady = 10)
+generateButton.grid(row = 3, column = 0, padx = 12, pady = 10)
 
 sortButton  =  Button(uiFrame, text = 'Sort', command = swithchon, bg = color['WHITE'], width = 14)
-sortButton.grid(row = 2, column = 1, padx = 12, pady = 10)
+sortButton.grid(row = 3, column = 1, padx = 12, pady = 10)
 
 stopButton  =  Button(uiFrame, text = 'Stop', command = stop, bg = color['WHITE'], width = 14)
-stopButton.grid(row = 2, column = 2, padx = 12, pady = 10)
+stopButton.grid(row = 3, column = 2, padx = 12, pady = 10)
 
 exitButton  =  Button(uiFrame, text = 'Exit', command = exit, bg = color['WHITE'], background = color['RED'], fg = color['WHITE'], width = 14)
-exitButton.grid(row = 2, column = 3, padx = 12, pady = 10)
+exitButton.grid(row = 3, column = 3, padx = 12, pady = 10)
 
 visualCanvas  =  Canvas(mainWindow, width = 980, height = 480, bg = color['WHITE'])
-visualCanvas.grid(row = 3 , column = 0, padx = 10, pady = 10)
+visualCanvas.grid(row = 4 , column = 0, padx = 10, pady = (0, 10))
 
 # <--- Print Main Window --->
 
