@@ -1,1863 +1,392 @@
-<<<<<<< HEAD
 ('H:\\Programing '
- 'Projects\\VScode\\Pythons_Scripts\\Sorting-Algorithm-Visualizer-in-Python\\build\\Sorting-Algorithms-Visualizer\\PYZ-00.pyz',
- [('os',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\os.py',
-   'PYMODULE'),
-  ('subprocess',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\subprocess.py',
-   'PYMODULE'),
-  ('selectors',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\selectors.py',
-   'PYMODULE'),
-  ('contextlib',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\contextlib.py',
-   'PYMODULE'),
-  ('threading',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\threading.py',
-   'PYMODULE'),
-  ('_threading_local',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\_threading_local.py',
-   'PYMODULE'),
-  ('signal',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\signal.py',
-   'PYMODULE'),
-  ('_strptime',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\_strptime.py',
-   'PYMODULE'),
-  ('datetime',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\datetime.py',
-   'PYMODULE'),
-  ('calendar',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\calendar.py',
-   'PYMODULE'),
-  ('argparse',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\argparse.py',
-   'PYMODULE'),
-  ('textwrap',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\textwrap.py',
-   'PYMODULE'),
-  ('shutil',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\shutil.py',
-   'PYMODULE'),
-  ('zipfile',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\zipfile.py',
-   'PYMODULE'),
-  ('py_compile',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\py_compile.py',
-   'PYMODULE'),
+ 'Projects\\Pythons_Scripts\\Sorting-Algorithm-Visualizer\\build\\Sorting-Algorithms-Visualizer\\PYZ-00.pyz',
+ [('os', 'd:\\python3.9.6\\lib\\os.py', 'PYMODULE'),
+  ('subprocess', 'd:\\python3.9.6\\lib\\subprocess.py', 'PYMODULE'),
+  ('selectors', 'd:\\python3.9.6\\lib\\selectors.py', 'PYMODULE'),
+  ('contextlib', 'd:\\python3.9.6\\lib\\contextlib.py', 'PYMODULE'),
+  ('threading', 'd:\\python3.9.6\\lib\\threading.py', 'PYMODULE'),
+  ('_threading_local', 'd:\\python3.9.6\\lib\\_threading_local.py', 'PYMODULE'),
+  ('signal', 'd:\\python3.9.6\\lib\\signal.py', 'PYMODULE'),
+  ('_strptime', 'd:\\python3.9.6\\lib\\_strptime.py', 'PYMODULE'),
+  ('datetime', 'd:\\python3.9.6\\lib\\datetime.py', 'PYMODULE'),
+  ('calendar', 'd:\\python3.9.6\\lib\\calendar.py', 'PYMODULE'),
+  ('argparse', 'd:\\python3.9.6\\lib\\argparse.py', 'PYMODULE'),
+  ('textwrap', 'd:\\python3.9.6\\lib\\textwrap.py', 'PYMODULE'),
+  ('shutil', 'd:\\python3.9.6\\lib\\shutil.py', 'PYMODULE'),
+  ('zipfile', 'd:\\python3.9.6\\lib\\zipfile.py', 'PYMODULE'),
+  ('py_compile', 'd:\\python3.9.6\\lib\\py_compile.py', 'PYMODULE'),
   ('importlib.machinery',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\importlib\\machinery.py',
+   'd:\\python3.9.6\\lib\\importlib\\machinery.py',
    'PYMODULE'),
-  ('importlib',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\importlib\\__init__.py',
-   'PYMODULE'),
+  ('importlib', 'd:\\python3.9.6\\lib\\importlib\\__init__.py', 'PYMODULE'),
+  ('importlib.abc', 'd:\\python3.9.6\\lib\\importlib\\abc.py', 'PYMODULE'),
+  ('typing', 'd:\\python3.9.6\\lib\\typing.py', 'PYMODULE'),
   ('importlib._bootstrap',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\importlib\\_bootstrap.py',
+   'd:\\python3.9.6\\lib\\importlib\\_bootstrap.py',
    'PYMODULE'),
   ('importlib._bootstrap_external',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\importlib\\_bootstrap_external.py',
+   'd:\\python3.9.6\\lib\\importlib\\_bootstrap_external.py',
    'PYMODULE'),
   ('importlib.metadata',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\importlib\\metadata.py',
+   'd:\\python3.9.6\\lib\\importlib\\metadata.py',
    'PYMODULE'),
-  ('importlib.abc',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\importlib\\abc.py',
-   'PYMODULE'),
-  ('typing',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\typing.py',
-   'PYMODULE'),
-  ('configparser',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\configparser.py',
-   'PYMODULE'),
-  ('pathlib',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\pathlib.py',
-   'PYMODULE'),
-  ('urllib.parse',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\urllib\\parse.py',
-   'PYMODULE'),
-  ('urllib',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\urllib\\__init__.py',
-   'PYMODULE'),
-  ('email',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\__init__.py',
-   'PYMODULE'),
-  ('email.parser',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\parser.py',
-   'PYMODULE'),
+  ('configparser', 'd:\\python3.9.6\\lib\\configparser.py', 'PYMODULE'),
+  ('pathlib', 'd:\\python3.9.6\\lib\\pathlib.py', 'PYMODULE'),
+  ('urllib.parse', 'd:\\python3.9.6\\lib\\urllib\\parse.py', 'PYMODULE'),
+  ('urllib', 'd:\\python3.9.6\\lib\\urllib\\__init__.py', 'PYMODULE'),
+  ('email', 'd:\\python3.9.6\\lib\\email\\__init__.py', 'PYMODULE'),
+  ('email.parser', 'd:\\python3.9.6\\lib\\email\\parser.py', 'PYMODULE'),
   ('email._policybase',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\_policybase.py',
+   'd:\\python3.9.6\\lib\\email\\_policybase.py',
    'PYMODULE'),
-  ('email.utils',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\utils.py',
-   'PYMODULE'),
+  ('email.utils', 'd:\\python3.9.6\\lib\\email\\utils.py', 'PYMODULE'),
   ('email._parseaddr',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\_parseaddr.py',
+   'd:\\python3.9.6\\lib\\email\\_parseaddr.py',
    'PYMODULE'),
-  ('socket',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\socket.py',
-   'PYMODULE'),
+  ('socket', 'd:\\python3.9.6\\lib\\socket.py', 'PYMODULE'),
   ('email.feedparser',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\feedparser.py',
+   'd:\\python3.9.6\\lib\\email\\feedparser.py',
    'PYMODULE'),
-  ('email.message',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\message.py',
-   'PYMODULE'),
-  ('email.policy',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\policy.py',
-   'PYMODULE'),
+  ('email.message', 'd:\\python3.9.6\\lib\\email\\message.py', 'PYMODULE'),
+  ('email.policy', 'd:\\python3.9.6\\lib\\email\\policy.py', 'PYMODULE'),
   ('email.contentmanager',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\contentmanager.py',
+   'd:\\python3.9.6\\lib\\email\\contentmanager.py',
    'PYMODULE'),
   ('email.quoprimime',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\quoprimime.py',
+   'd:\\python3.9.6\\lib\\email\\quoprimime.py',
    'PYMODULE'),
-  ('string',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\string.py',
-   'PYMODULE'),
+  ('string', 'd:\\python3.9.6\\lib\\string.py', 'PYMODULE'),
   ('email.headerregistry',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\headerregistry.py',
+   'd:\\python3.9.6\\lib\\email\\headerregistry.py',
    'PYMODULE'),
-  ('email.iterators',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\iterators.py',
-   'PYMODULE'),
-  ('email.generator',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\generator.py',
-   'PYMODULE'),
+  ('email.iterators', 'd:\\python3.9.6\\lib\\email\\iterators.py', 'PYMODULE'),
+  ('email.generator', 'd:\\python3.9.6\\lib\\email\\generator.py', 'PYMODULE'),
   ('email._encoded_words',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\_encoded_words.py',
+   'd:\\python3.9.6\\lib\\email\\_encoded_words.py',
    'PYMODULE'),
-  ('base64',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\base64.py',
-   'PYMODULE'),
-  ('getopt',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\getopt.py',
-   'PYMODULE'),
-  ('quopri',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\quopri.py',
-   'PYMODULE'),
-  ('uu',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\uu.py',
-   'PYMODULE'),
-  ('optparse',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\optparse.py',
-   'PYMODULE'),
+  ('base64', 'd:\\python3.9.6\\lib\\base64.py', 'PYMODULE'),
+  ('getopt', 'd:\\python3.9.6\\lib\\getopt.py', 'PYMODULE'),
+  ('quopri', 'd:\\python3.9.6\\lib\\quopri.py', 'PYMODULE'),
+  ('uu', 'd:\\python3.9.6\\lib\\uu.py', 'PYMODULE'),
+  ('optparse', 'd:\\python3.9.6\\lib\\optparse.py', 'PYMODULE'),
   ('email._header_value_parser',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\_header_value_parser.py',
+   'd:\\python3.9.6\\lib\\email\\_header_value_parser.py',
    'PYMODULE'),
-  ('email.header',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\header.py',
-   'PYMODULE'),
+  ('email.header', 'd:\\python3.9.6\\lib\\email\\header.py', 'PYMODULE'),
   ('email.base64mime',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\base64mime.py',
+   'd:\\python3.9.6\\lib\\email\\base64mime.py',
    'PYMODULE'),
-  ('email.charset',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\charset.py',
-   'PYMODULE'),
-  ('email.encoders',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\encoders.py',
-   'PYMODULE'),
-  ('email.errors',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\errors.py',
-   'PYMODULE'),
-  ('csv',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\csv.py',
-   'PYMODULE'),
-  ('tokenize',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\tokenize.py',
-   'PYMODULE'),
-  ('token',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\token.py',
-   'PYMODULE'),
-  ('struct',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\struct.py',
-   'PYMODULE'),
-  ('importlib.util',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\importlib\\util.py',
-   'PYMODULE'),
-  ('tarfile',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\tarfile.py',
-   'PYMODULE'),
-  ('gzip',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\gzip.py',
-   'PYMODULE'),
-  ('_compression',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\_compression.py',
-   'PYMODULE'),
-  ('lzma',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\lzma.py',
-   'PYMODULE'),
-  ('bz2',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\bz2.py',
-   'PYMODULE'),
-  ('fnmatch',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\fnmatch.py',
-   'PYMODULE'),
-  ('copy',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\copy.py',
-   'PYMODULE'),
-  ('gettext',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\gettext.py',
-   'PYMODULE'),
-  ('ntpath',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\ntpath.py',
-   'PYMODULE'),
-  ('genericpath',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\genericpath.py',
-   'PYMODULE'),
-  ('posixpath',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\posixpath.py',
-   'PYMODULE'),
-  ('stat',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\stat.py',
-   'PYMODULE'),
+  ('email.charset', 'd:\\python3.9.6\\lib\\email\\charset.py', 'PYMODULE'),
+  ('email.encoders', 'd:\\python3.9.6\\lib\\email\\encoders.py', 'PYMODULE'),
+  ('email.errors', 'd:\\python3.9.6\\lib\\email\\errors.py', 'PYMODULE'),
+  ('csv', 'd:\\python3.9.6\\lib\\csv.py', 'PYMODULE'),
+  ('tokenize', 'd:\\python3.9.6\\lib\\tokenize.py', 'PYMODULE'),
+  ('token', 'd:\\python3.9.6\\lib\\token.py', 'PYMODULE'),
+  ('struct', 'd:\\python3.9.6\\lib\\struct.py', 'PYMODULE'),
+  ('importlib.util', 'd:\\python3.9.6\\lib\\importlib\\util.py', 'PYMODULE'),
+  ('tarfile', 'd:\\python3.9.6\\lib\\tarfile.py', 'PYMODULE'),
+  ('gzip', 'd:\\python3.9.6\\lib\\gzip.py', 'PYMODULE'),
+  ('_compression', 'd:\\python3.9.6\\lib\\_compression.py', 'PYMODULE'),
+  ('lzma', 'd:\\python3.9.6\\lib\\lzma.py', 'PYMODULE'),
+  ('bz2', 'd:\\python3.9.6\\lib\\bz2.py', 'PYMODULE'),
+  ('fnmatch', 'd:\\python3.9.6\\lib\\fnmatch.py', 'PYMODULE'),
+  ('copy', 'd:\\python3.9.6\\lib\\copy.py', 'PYMODULE'),
+  ('gettext', 'd:\\python3.9.6\\lib\\gettext.py', 'PYMODULE'),
+  ('ntpath', 'd:\\python3.9.6\\lib\\ntpath.py', 'PYMODULE'),
+  ('genericpath', 'd:\\python3.9.6\\lib\\genericpath.py', 'PYMODULE'),
+  ('posixpath', 'd:\\python3.9.6\\lib\\posixpath.py', 'PYMODULE'),
+  ('stat', 'd:\\python3.9.6\\lib\\stat.py', 'PYMODULE'),
+  ('inspect', 'd:\\python3.9.6\\lib\\inspect.py', 'PYMODULE'),
+  ('dis', 'd:\\python3.9.6\\lib\\dis.py', 'PYMODULE'),
+  ('opcode', 'd:\\python3.9.6\\lib\\opcode.py', 'PYMODULE'),
+  ('ast', 'd:\\python3.9.6\\lib\\ast.py', 'PYMODULE'),
   ('multiprocessing.popen_spawn_posix',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\popen_spawn_posix.py',
+   'd:\\python3.9.6\\lib\\multiprocessing\\popen_spawn_posix.py',
    'PYMODULE'),
   ('multiprocessing.resource_tracker',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\resource_tracker.py',
+   'd:\\python3.9.6\\lib\\multiprocessing\\resource_tracker.py',
    'PYMODULE'),
   ('multiprocessing.util',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\util.py',
+   'd:\\python3.9.6\\lib\\multiprocessing\\util.py',
    'PYMODULE'),
   ('multiprocessing.forkserver',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\forkserver.py',
+   'd:\\python3.9.6\\lib\\multiprocessing\\forkserver.py',
    'PYMODULE'),
   ('multiprocessing.connection',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\connection.py',
+   'd:\\python3.9.6\\lib\\multiprocessing\\connection.py',
    'PYMODULE'),
   ('multiprocessing.resource_sharer',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\resource_sharer.py',
+   'd:\\python3.9.6\\lib\\multiprocessing\\resource_sharer.py',
    'PYMODULE'),
-  ('xmlrpc.client',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\xmlrpc\\client.py',
-   'PYMODULE'),
-  ('xmlrpc',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\xmlrpc\\__init__.py',
-   'PYMODULE'),
+  ('xmlrpc.client', 'd:\\python3.9.6\\lib\\xmlrpc\\client.py', 'PYMODULE'),
+  ('xmlrpc', 'd:\\python3.9.6\\lib\\xmlrpc\\__init__.py', 'PYMODULE'),
   ('xml.parsers.expat',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\xml\\parsers\\expat.py',
+   'd:\\python3.9.6\\lib\\xml\\parsers\\expat.py',
    'PYMODULE'),
   ('xml.parsers',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\xml\\parsers\\__init__.py',
+   'd:\\python3.9.6\\lib\\xml\\parsers\\__init__.py',
    'PYMODULE'),
-  ('xml',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\xml\\__init__.py',
-   'PYMODULE'),
+  ('xml', 'd:\\python3.9.6\\lib\\xml\\__init__.py', 'PYMODULE'),
   ('xml.sax.expatreader',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\xml\\sax\\expatreader.py',
+   'd:\\python3.9.6\\lib\\xml\\sax\\expatreader.py',
    'PYMODULE'),
   ('xml.sax.saxutils',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\xml\\sax\\saxutils.py',
+   'd:\\python3.9.6\\lib\\xml\\sax\\saxutils.py',
    'PYMODULE'),
-  ('urllib.request',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\urllib\\request.py',
-   'PYMODULE'),
-  ('getpass',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\getpass.py',
-   'PYMODULE'),
-  ('nturl2path',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\nturl2path.py',
-   'PYMODULE'),
-  ('ftplib',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\ftplib.py',
-   'PYMODULE'),
-  ('netrc',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\netrc.py',
-   'PYMODULE'),
-  ('shlex',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\shlex.py',
-   'PYMODULE'),
-  ('mimetypes',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\mimetypes.py',
-   'PYMODULE'),
-  ('http.cookiejar',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\http\\cookiejar.py',
-   'PYMODULE'),
-  ('http',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\http\\__init__.py',
-   'PYMODULE'),
-  ('ssl',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\ssl.py',
-   'PYMODULE'),
-  ('urllib.response',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\urllib\\response.py',
-   'PYMODULE'),
-  ('urllib.error',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\urllib\\error.py',
-   'PYMODULE'),
-  ('hashlib',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\hashlib.py',
-   'PYMODULE'),
-  ('bisect',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\bisect.py',
-   'PYMODULE'),
-  ('xml.sax',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\xml\\sax\\__init__.py',
-   'PYMODULE'),
-  ('xml.sax.handler',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\xml\\sax\\handler.py',
-   'PYMODULE'),
+  ('urllib.request', 'd:\\python3.9.6\\lib\\urllib\\request.py', 'PYMODULE'),
+  ('getpass', 'd:\\python3.9.6\\lib\\getpass.py', 'PYMODULE'),
+  ('nturl2path', 'd:\\python3.9.6\\lib\\nturl2path.py', 'PYMODULE'),
+  ('ftplib', 'd:\\python3.9.6\\lib\\ftplib.py', 'PYMODULE'),
+  ('netrc', 'd:\\python3.9.6\\lib\\netrc.py', 'PYMODULE'),
+  ('shlex', 'd:\\python3.9.6\\lib\\shlex.py', 'PYMODULE'),
+  ('mimetypes', 'd:\\python3.9.6\\lib\\mimetypes.py', 'PYMODULE'),
+  ('http.cookiejar', 'd:\\python3.9.6\\lib\\http\\cookiejar.py', 'PYMODULE'),
+  ('http', 'd:\\python3.9.6\\lib\\http\\__init__.py', 'PYMODULE'),
+  ('ssl', 'd:\\python3.9.6\\lib\\ssl.py', 'PYMODULE'),
+  ('urllib.response', 'd:\\python3.9.6\\lib\\urllib\\response.py', 'PYMODULE'),
+  ('urllib.error', 'd:\\python3.9.6\\lib\\urllib\\error.py', 'PYMODULE'),
+  ('hashlib', 'd:\\python3.9.6\\lib\\hashlib.py', 'PYMODULE'),
+  ('bisect', 'd:\\python3.9.6\\lib\\bisect.py', 'PYMODULE'),
+  ('xml.sax', 'd:\\python3.9.6\\lib\\xml\\sax\\__init__.py', 'PYMODULE'),
+  ('xml.sax.handler', 'd:\\python3.9.6\\lib\\xml\\sax\\handler.py', 'PYMODULE'),
   ('xml.sax._exceptions',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\xml\\sax\\_exceptions.py',
+   'd:\\python3.9.6\\lib\\xml\\sax\\_exceptions.py',
    'PYMODULE'),
   ('xml.sax.xmlreader',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\xml\\sax\\xmlreader.py',
+   'd:\\python3.9.6\\lib\\xml\\sax\\xmlreader.py',
    'PYMODULE'),
-  ('http.client',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\http\\client.py',
-   'PYMODULE'),
-  ('decimal',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\decimal.py',
-   'PYMODULE'),
-  ('_pydecimal',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\_pydecimal.py',
-   'PYMODULE'),
-  ('contextvars',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\contextvars.py',
-   'PYMODULE'),
-  ('numbers',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\numbers.py',
-   'PYMODULE'),
-  ('hmac',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\hmac.py',
-   'PYMODULE'),
-  ('tempfile',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\tempfile.py',
-   'PYMODULE'),
-  ('logging',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\logging\\__init__.py',
-   'PYMODULE'),
-  ('pickle',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\pickle.py',
-   'PYMODULE'),
-  ('pprint',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\pprint.py',
-   'PYMODULE'),
-  ('doctest',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\doctest.py',
-   'PYMODULE'),
-  ('unittest',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\unittest\\__init__.py',
-   'PYMODULE'),
+  ('http.client', 'd:\\python3.9.6\\lib\\http\\client.py', 'PYMODULE'),
+  ('decimal', 'd:\\python3.9.6\\lib\\decimal.py', 'PYMODULE'),
+  ('_pydecimal', 'd:\\python3.9.6\\lib\\_pydecimal.py', 'PYMODULE'),
+  ('contextvars', 'd:\\python3.9.6\\lib\\contextvars.py', 'PYMODULE'),
+  ('numbers', 'd:\\python3.9.6\\lib\\numbers.py', 'PYMODULE'),
+  ('hmac', 'd:\\python3.9.6\\lib\\hmac.py', 'PYMODULE'),
+  ('tempfile', 'd:\\python3.9.6\\lib\\tempfile.py', 'PYMODULE'),
+  ('logging', 'd:\\python3.9.6\\lib\\logging\\__init__.py', 'PYMODULE'),
+  ('pickle', 'd:\\python3.9.6\\lib\\pickle.py', 'PYMODULE'),
+  ('pprint', 'd:\\python3.9.6\\lib\\pprint.py', 'PYMODULE'),
+  ('doctest', 'd:\\python3.9.6\\lib\\doctest.py', 'PYMODULE'),
+  ('unittest', 'd:\\python3.9.6\\lib\\unittest\\__init__.py', 'PYMODULE'),
   ('unittest.async_case',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\unittest\\async_case.py',
+   'd:\\python3.9.6\\lib\\unittest\\async_case.py',
    'PYMODULE'),
-  ('asyncio',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\__init__.py',
-   'PYMODULE'),
+  ('asyncio', 'd:\\python3.9.6\\lib\\asyncio\\__init__.py', 'PYMODULE'),
   ('asyncio.unix_events',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\unix_events.py',
+   'd:\\python3.9.6\\lib\\asyncio\\unix_events.py',
    'PYMODULE'),
-  ('asyncio.log',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\log.py',
-   'PYMODULE'),
+  ('asyncio.log', 'd:\\python3.9.6\\lib\\asyncio\\log.py', 'PYMODULE'),
   ('asyncio.windows_events',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\windows_events.py',
+   'd:\\python3.9.6\\lib\\asyncio\\windows_events.py',
    'PYMODULE'),
   ('asyncio.windows_utils',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\windows_utils.py',
+   'd:\\python3.9.6\\lib\\asyncio\\windows_utils.py',
    'PYMODULE'),
   ('asyncio.selector_events',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\selector_events.py',
+   'd:\\python3.9.6\\lib\\asyncio\\selector_events.py',
    'PYMODULE'),
   ('asyncio.proactor_events',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\proactor_events.py',
+   'd:\\python3.9.6\\lib\\asyncio\\proactor_events.py',
    'PYMODULE'),
   ('asyncio.base_subprocess',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\base_subprocess.py',
+   'd:\\python3.9.6\\lib\\asyncio\\base_subprocess.py',
    'PYMODULE'),
-  ('asyncio.threads',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\threads.py',
-   'PYMODULE'),
+  ('asyncio.threads', 'd:\\python3.9.6\\lib\\asyncio\\threads.py', 'PYMODULE'),
   ('asyncio.subprocess',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\subprocess.py',
+   'd:\\python3.9.6\\lib\\asyncio\\subprocess.py',
    'PYMODULE'),
-  ('asyncio.streams',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\streams.py',
-   'PYMODULE'),
-  ('asyncio.queues',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\queues.py',
-   'PYMODULE'),
-  ('asyncio.runners',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\runners.py',
-   'PYMODULE'),
-  ('asyncio.events',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\events.py',
-   'PYMODULE'),
+  ('asyncio.streams', 'd:\\python3.9.6\\lib\\asyncio\\streams.py', 'PYMODULE'),
+  ('asyncio.queues', 'd:\\python3.9.6\\lib\\asyncio\\queues.py', 'PYMODULE'),
+  ('asyncio.runners', 'd:\\python3.9.6\\lib\\asyncio\\runners.py', 'PYMODULE'),
+  ('asyncio.events', 'd:\\python3.9.6\\lib\\asyncio\\events.py', 'PYMODULE'),
   ('asyncio.base_events',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\base_events.py',
+   'd:\\python3.9.6\\lib\\asyncio\\base_events.py',
    'PYMODULE'),
   ('concurrent.futures',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\concurrent\\futures\\__init__.py',
+   'd:\\python3.9.6\\lib\\concurrent\\futures\\__init__.py',
    'PYMODULE'),
   ('concurrent.futures.thread',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\concurrent\\futures\\thread.py',
+   'd:\\python3.9.6\\lib\\concurrent\\futures\\thread.py',
    'PYMODULE'),
-  ('queue',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\queue.py',
-   'PYMODULE'),
+  ('queue', 'd:\\python3.9.6\\lib\\queue.py', 'PYMODULE'),
   ('concurrent.futures.process',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\concurrent\\futures\\process.py',
+   'd:\\python3.9.6\\lib\\concurrent\\futures\\process.py',
    'PYMODULE'),
   ('multiprocessing.queues',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\queues.py',
+   'd:\\python3.9.6\\lib\\multiprocessing\\queues.py',
    'PYMODULE'),
   ('multiprocessing.synchronize',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\synchronize.py',
+   'd:\\python3.9.6\\lib\\multiprocessing\\synchronize.py',
    'PYMODULE'),
   ('multiprocessing.heap',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\heap.py',
+   'd:\\python3.9.6\\lib\\multiprocessing\\heap.py',
    'PYMODULE'),
   ('concurrent.futures._base',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\concurrent\\futures\\_base.py',
+   'd:\\python3.9.6\\lib\\concurrent\\futures\\_base.py',
    'PYMODULE'),
-  ('concurrent',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\concurrent\\__init__.py',
-   'PYMODULE'),
-  ('asyncio.trsock',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\trsock.py',
-   'PYMODULE'),
+  ('concurrent', 'd:\\python3.9.6\\lib\\concurrent\\__init__.py', 'PYMODULE'),
+  ('asyncio.trsock', 'd:\\python3.9.6\\lib\\asyncio\\trsock.py', 'PYMODULE'),
   ('asyncio.staggered',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\staggered.py',
+   'd:\\python3.9.6\\lib\\asyncio\\staggered.py',
    'PYMODULE'),
-  ('asyncio.tasks',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\tasks.py',
-   'PYMODULE'),
+  ('asyncio.tasks', 'd:\\python3.9.6\\lib\\asyncio\\tasks.py', 'PYMODULE'),
   ('asyncio.base_tasks',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\base_tasks.py',
+   'd:\\python3.9.6\\lib\\asyncio\\base_tasks.py',
    'PYMODULE'),
-  ('asyncio.locks',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\locks.py',
-   'PYMODULE'),
+  ('asyncio.locks', 'd:\\python3.9.6\\lib\\asyncio\\locks.py', 'PYMODULE'),
   ('asyncio.sslproto',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\sslproto.py',
+   'd:\\python3.9.6\\lib\\asyncio\\sslproto.py',
    'PYMODULE'),
   ('asyncio.transports',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\transports.py',
+   'd:\\python3.9.6\\lib\\asyncio\\transports.py',
    'PYMODULE'),
   ('asyncio.protocols',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\protocols.py',
+   'd:\\python3.9.6\\lib\\asyncio\\protocols.py',
    'PYMODULE'),
-  ('asyncio.futures',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\futures.py',
-   'PYMODULE'),
+  ('asyncio.futures', 'd:\\python3.9.6\\lib\\asyncio\\futures.py', 'PYMODULE'),
   ('asyncio.exceptions',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\exceptions.py',
+   'd:\\python3.9.6\\lib\\asyncio\\exceptions.py',
    'PYMODULE'),
   ('asyncio.coroutines',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\coroutines.py',
+   'd:\\python3.9.6\\lib\\asyncio\\coroutines.py',
    'PYMODULE'),
   ('asyncio.base_futures',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\base_futures.py',
+   'd:\\python3.9.6\\lib\\asyncio\\base_futures.py',
    'PYMODULE'),
   ('asyncio.format_helpers',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\format_helpers.py',
+   'd:\\python3.9.6\\lib\\asyncio\\format_helpers.py',
    'PYMODULE'),
   ('asyncio.constants',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\constants.py',
+   'd:\\python3.9.6\\lib\\asyncio\\constants.py',
    'PYMODULE'),
   ('unittest.signals',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\unittest\\signals.py',
+   'd:\\python3.9.6\\lib\\unittest\\signals.py',
    'PYMODULE'),
-  ('unittest.main',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\unittest\\main.py',
-   'PYMODULE'),
-  ('unittest.runner',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\unittest\\runner.py',
-   'PYMODULE'),
-  ('unittest.loader',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\unittest\\loader.py',
-   'PYMODULE'),
-  ('unittest.suite',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\unittest\\suite.py',
-   'PYMODULE'),
-  ('unittest.case',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\unittest\\case.py',
-   'PYMODULE'),
-  ('unittest._log',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\unittest\\_log.py',
-   'PYMODULE'),
-  ('unittest.result',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\unittest\\result.py',
-   'PYMODULE'),
-  ('unittest.util',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\unittest\\util.py',
-   'PYMODULE'),
-  ('pdb',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\pdb.py',
-   'PYMODULE'),
-  ('pydoc',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\pydoc.py',
-   'PYMODULE'),
-  ('webbrowser',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\webbrowser.py',
-   'PYMODULE'),
-  ('http.server',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\http\\server.py',
-   'PYMODULE'),
-  ('socketserver',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\socketserver.py',
-   'PYMODULE'),
-  ('html',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\html\\__init__.py',
-   'PYMODULE'),
-  ('html.entities',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\html\\entities.py',
-   'PYMODULE'),
+  ('unittest.main', 'd:\\python3.9.6\\lib\\unittest\\main.py', 'PYMODULE'),
+  ('unittest.runner', 'd:\\python3.9.6\\lib\\unittest\\runner.py', 'PYMODULE'),
+  ('unittest.loader', 'd:\\python3.9.6\\lib\\unittest\\loader.py', 'PYMODULE'),
+  ('unittest.suite', 'd:\\python3.9.6\\lib\\unittest\\suite.py', 'PYMODULE'),
+  ('unittest.case', 'd:\\python3.9.6\\lib\\unittest\\case.py', 'PYMODULE'),
+  ('unittest._log', 'd:\\python3.9.6\\lib\\unittest\\_log.py', 'PYMODULE'),
+  ('unittest.result', 'd:\\python3.9.6\\lib\\unittest\\result.py', 'PYMODULE'),
+  ('unittest.util', 'd:\\python3.9.6\\lib\\unittest\\util.py', 'PYMODULE'),
+  ('pdb', 'd:\\python3.9.6\\lib\\pdb.py', 'PYMODULE'),
+  ('pydoc', 'd:\\python3.9.6\\lib\\pydoc.py', 'PYMODULE'),
+  ('webbrowser', 'd:\\python3.9.6\\lib\\webbrowser.py', 'PYMODULE'),
+  ('http.server', 'd:\\python3.9.6\\lib\\http\\server.py', 'PYMODULE'),
+  ('socketserver', 'd:\\python3.9.6\\lib\\socketserver.py', 'PYMODULE'),
+  ('html', 'd:\\python3.9.6\\lib\\html\\__init__.py', 'PYMODULE'),
+  ('html.entities', 'd:\\python3.9.6\\lib\\html\\entities.py', 'PYMODULE'),
   ('pydoc_data.topics',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\pydoc_data\\topics.py',
+   'd:\\python3.9.6\\lib\\pydoc_data\\topics.py',
    'PYMODULE'),
-  ('pydoc_data',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\pydoc_data\\__init__.py',
-   'PYMODULE'),
-  ('tty',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\tty.py',
-   'PYMODULE'),
-  ('sysconfig',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\sysconfig.py',
-   'PYMODULE'),
-  ('_aix_support',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\_aix_support.py',
-   'PYMODULE'),
-  ('_bootsubprocess',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\_bootsubprocess.py',
-   'PYMODULE'),
-  ('_osx_support',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\_osx_support.py',
-   'PYMODULE'),
-  ('distutils.log',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\distutils\\log.py',
-   'PYMODULE'),
-  ('distutils',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\distutils\\__init__.py',
-   'PYMODULE'),
+  ('pydoc_data', 'd:\\python3.9.6\\lib\\pydoc_data\\__init__.py', 'PYMODULE'),
+  ('tty', 'd:\\python3.9.6\\lib\\tty.py', 'PYMODULE'),
+  ('sysconfig', 'd:\\python3.9.6\\lib\\sysconfig.py', 'PYMODULE'),
+  ('_aix_support', 'd:\\python3.9.6\\lib\\_aix_support.py', 'PYMODULE'),
+  ('_bootsubprocess', 'd:\\python3.9.6\\lib\\_bootsubprocess.py', 'PYMODULE'),
+  ('_osx_support', 'd:\\python3.9.6\\lib\\_osx_support.py', 'PYMODULE'),
+  ('distutils.log', 'd:\\python3.9.6\\lib\\distutils\\log.py', 'PYMODULE'),
+  ('distutils', 'd:\\python3.9.6\\lib\\distutils\\__init__.py', 'PYMODULE'),
   ('distutils.ccompiler',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\distutils\\ccompiler.py',
+   'd:\\python3.9.6\\lib\\distutils\\ccompiler.py',
    'PYMODULE'),
   ('distutils.fancy_getopt',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\distutils\\fancy_getopt.py',
+   'd:\\python3.9.6\\lib\\distutils\\fancy_getopt.py',
    'PYMODULE'),
-  ('distutils.debug',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\distutils\\debug.py',
-   'PYMODULE'),
-  ('distutils.util',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\distutils\\util.py',
-   'PYMODULE'),
+  ('distutils.debug', 'd:\\python3.9.6\\lib\\distutils\\debug.py', 'PYMODULE'),
+  ('distutils.util', 'd:\\python3.9.6\\lib\\distutils\\util.py', 'PYMODULE'),
   ('distutils.filelist',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\distutils\\filelist.py',
+   'd:\\python3.9.6\\lib\\distutils\\filelist.py',
    'PYMODULE'),
   ('distutils.dep_util',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\distutils\\dep_util.py',
+   'd:\\python3.9.6\\lib\\distutils\\dep_util.py',
    'PYMODULE'),
   ('distutils.dir_util',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\distutils\\dir_util.py',
+   'd:\\python3.9.6\\lib\\distutils\\dir_util.py',
    'PYMODULE'),
   ('distutils.file_util',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\distutils\\file_util.py',
+   'd:\\python3.9.6\\lib\\distutils\\file_util.py',
    'PYMODULE'),
-  ('distutils.spawn',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\distutils\\spawn.py',
-   'PYMODULE'),
+  ('distutils.spawn', 'd:\\python3.9.6\\lib\\distutils\\spawn.py', 'PYMODULE'),
   ('distutils.errors',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\distutils\\errors.py',
+   'd:\\python3.9.6\\lib\\distutils\\errors.py',
    'PYMODULE'),
   ('distutils.sysconfig',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\distutils\\sysconfig.py',
+   'd:\\python3.9.6\\lib\\distutils\\sysconfig.py',
    'PYMODULE'),
   ('distutils.text_file',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\distutils\\text_file.py',
+   'd:\\python3.9.6\\lib\\distutils\\text_file.py',
    'PYMODULE'),
-  ('platform',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\platform.py',
-   'PYMODULE'),
-  ('plistlib',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\plistlib.py',
-   'PYMODULE'),
-  ('pkgutil',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\pkgutil.py',
-   'PYMODULE'),
-  ('zipimport',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\zipimport.py',
-   'PYMODULE'),
-  ('runpy',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\runpy.py',
-   'PYMODULE'),
-  ('glob',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\glob.py',
-   'PYMODULE'),
-  ('code',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\code.py',
-   'PYMODULE'),
-  ('codeop',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\codeop.py',
-   'PYMODULE'),
-  ('dis',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\dis.py',
-   'PYMODULE'),
-  ('opcode',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\opcode.py',
-   'PYMODULE'),
-  ('bdb',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\bdb.py',
-   'PYMODULE'),
-  ('cmd',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\cmd.py',
-   'PYMODULE'),
-  ('inspect',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\inspect.py',
-   'PYMODULE'),
-  ('ast',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\ast.py',
-   'PYMODULE'),
-  ('difflib',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\difflib.py',
-   'PYMODULE'),
-  ('__future__',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\__future__.py',
-   'PYMODULE'),
-  ('_compat_pickle',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\_compat_pickle.py',
-   'PYMODULE'),
+  ('platform', 'd:\\python3.9.6\\lib\\platform.py', 'PYMODULE'),
+  ('plistlib', 'd:\\python3.9.6\\lib\\plistlib.py', 'PYMODULE'),
+  ('pkgutil', 'd:\\python3.9.6\\lib\\pkgutil.py', 'PYMODULE'),
+  ('zipimport', 'd:\\python3.9.6\\lib\\zipimport.py', 'PYMODULE'),
+  ('runpy', 'd:\\python3.9.6\\lib\\runpy.py', 'PYMODULE'),
+  ('glob', 'd:\\python3.9.6\\lib\\glob.py', 'PYMODULE'),
+  ('code', 'd:\\python3.9.6\\lib\\code.py', 'PYMODULE'),
+  ('codeop', 'd:\\python3.9.6\\lib\\codeop.py', 'PYMODULE'),
+  ('bdb', 'd:\\python3.9.6\\lib\\bdb.py', 'PYMODULE'),
+  ('cmd', 'd:\\python3.9.6\\lib\\cmd.py', 'PYMODULE'),
+  ('difflib', 'd:\\python3.9.6\\lib\\difflib.py', 'PYMODULE'),
+  ('__future__', 'd:\\python3.9.6\\lib\\__future__.py', 'PYMODULE'),
+  ('_compat_pickle', 'd:\\python3.9.6\\lib\\_compat_pickle.py', 'PYMODULE'),
   ('multiprocessing.process',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\process.py',
+   'd:\\python3.9.6\\lib\\multiprocessing\\process.py',
    'PYMODULE'),
   ('multiprocessing.context',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\context.py',
+   'd:\\python3.9.6\\lib\\multiprocessing\\context.py',
    'PYMODULE'),
   ('multiprocessing.popen_forkserver',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\popen_forkserver.py',
+   'd:\\python3.9.6\\lib\\multiprocessing\\popen_forkserver.py',
    'PYMODULE'),
   ('multiprocessing.sharedctypes',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\sharedctypes.py',
+   'd:\\python3.9.6\\lib\\multiprocessing\\sharedctypes.py',
    'PYMODULE'),
   ('multiprocessing.pool',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\pool.py',
+   'd:\\python3.9.6\\lib\\multiprocessing\\pool.py',
    'PYMODULE'),
   ('multiprocessing.dummy',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\dummy\\__init__.py',
+   'd:\\python3.9.6\\lib\\multiprocessing\\dummy\\__init__.py',
    'PYMODULE'),
   ('multiprocessing.dummy.connection',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\dummy\\connection.py',
+   'd:\\python3.9.6\\lib\\multiprocessing\\dummy\\connection.py',
    'PYMODULE'),
   ('multiprocessing.managers',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\managers.py',
+   'd:\\python3.9.6\\lib\\multiprocessing\\managers.py',
    'PYMODULE'),
   ('multiprocessing.shared_memory',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\shared_memory.py',
+   'd:\\python3.9.6\\lib\\multiprocessing\\shared_memory.py',
    'PYMODULE'),
-  ('secrets',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\secrets.py',
-   'PYMODULE'),
+  ('secrets', 'd:\\python3.9.6\\lib\\secrets.py', 'PYMODULE'),
   ('multiprocessing.reduction',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\reduction.py',
+   'd:\\python3.9.6\\lib\\multiprocessing\\reduction.py',
    'PYMODULE'),
   ('multiprocessing.popen_fork',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\popen_fork.py',
+   'd:\\python3.9.6\\lib\\multiprocessing\\popen_fork.py',
    'PYMODULE'),
   ('multiprocessing.popen_spawn_win32',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\popen_spawn_win32.py',
+   'd:\\python3.9.6\\lib\\multiprocessing\\popen_spawn_win32.py',
    'PYMODULE'),
   ('multiprocessing.spawn',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\spawn.py',
+   'd:\\python3.9.6\\lib\\multiprocessing\\spawn.py',
    'PYMODULE'),
   ('multiprocessing',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\__init__.py',
+   'd:\\python3.9.6\\lib\\multiprocessing\\__init__.py',
    'PYMODULE'),
-  ('stringprep',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\stringprep.py',
+  ('_py_abc', 'd:\\python3.9.6\\lib\\_py_abc.py', 'PYMODULE'),
+  ('stringprep', 'd:\\python3.9.6\\lib\\stringprep.py', 'PYMODULE'),
+  ('tracemalloc', 'd:\\python3.9.6\\lib\\tracemalloc.py', 'PYMODULE'),
+  ('ctypes', 'd:\\python3.9.6\\lib\\ctypes\\__init__.py', 'PYMODULE'),
+  ('ctypes._endian', 'd:\\python3.9.6\\lib\\ctypes\\_endian.py', 'PYMODULE'),
+  ('Color',
+   'H:\\Programing '
+   'Projects\\Pythons_Scripts\\Sorting-Algorithm-Visualizer\\Color.py',
    'PYMODULE'),
-  ('tracemalloc',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\tracemalloc.py',
-   'PYMODULE'),
-  ('_py_abc',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\_py_abc.py',
-   'PYMODULE'),
-  ('ctypes',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\ctypes\\__init__.py',
-   'PYMODULE'),
-  ('ctypes._endian',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\ctypes\\_endian.py',
-   'PYMODULE'),
-  ('random',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\random.py',
-   'PYMODULE'),
-  ('statistics',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\statistics.py',
-   'PYMODULE'),
-  ('fractions',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\fractions.py',
-   'PYMODULE'),
-  ('tkinter.ttk',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\tkinter\\ttk.py',
-   'PYMODULE'),
-  ('tkinter',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\tkinter\\__init__.py',
-   'PYMODULE'),
+  ('random', 'd:\\python3.9.6\\lib\\random.py', 'PYMODULE'),
+  ('statistics', 'd:\\python3.9.6\\lib\\statistics.py', 'PYMODULE'),
+  ('fractions', 'd:\\python3.9.6\\lib\\fractions.py', 'PYMODULE'),
+  ('tkinter.ttk', 'd:\\python3.9.6\\lib\\tkinter\\ttk.py', 'PYMODULE'),
+  ('tkinter', 'd:\\python3.9.6\\lib\\tkinter\\__init__.py', 'PYMODULE'),
   ('tkinter.constants',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\tkinter\\constants.py',
+   'd:\\python3.9.6\\lib\\tkinter\\constants.py',
    'PYMODULE')])
-=======
-('H:\\Programing '
- 'Projects\\VScode\\Pythons_Scripts\\Sorting-Algorithm-Visualizer-in-Python\\build\\Sorting-Algorithms-Visualizer\\PYZ-00.pyz',
- [('os',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\os.py',
-   'PYMODULE'),
-  ('subprocess',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\subprocess.py',
-   'PYMODULE'),
-  ('selectors',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\selectors.py',
-   'PYMODULE'),
-  ('contextlib',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\contextlib.py',
-   'PYMODULE'),
-  ('threading',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\threading.py',
-   'PYMODULE'),
-  ('_threading_local',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\_threading_local.py',
-   'PYMODULE'),
-  ('signal',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\signal.py',
-   'PYMODULE'),
-  ('_strptime',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\_strptime.py',
-   'PYMODULE'),
-  ('datetime',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\datetime.py',
-   'PYMODULE'),
-  ('calendar',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\calendar.py',
-   'PYMODULE'),
-  ('argparse',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\argparse.py',
-   'PYMODULE'),
-  ('textwrap',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\textwrap.py',
-   'PYMODULE'),
-  ('shutil',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\shutil.py',
-   'PYMODULE'),
-  ('zipfile',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\zipfile.py',
-   'PYMODULE'),
-  ('py_compile',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\py_compile.py',
-   'PYMODULE'),
-  ('importlib.machinery',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\importlib\\machinery.py',
-   'PYMODULE'),
-  ('importlib',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\importlib\\__init__.py',
-   'PYMODULE'),
-  ('importlib._bootstrap',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\importlib\\_bootstrap.py',
-   'PYMODULE'),
-  ('importlib._bootstrap_external',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\importlib\\_bootstrap_external.py',
-   'PYMODULE'),
-  ('importlib.metadata',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\importlib\\metadata.py',
-   'PYMODULE'),
-  ('importlib.abc',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\importlib\\abc.py',
-   'PYMODULE'),
-  ('typing',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\typing.py',
-   'PYMODULE'),
-  ('configparser',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\configparser.py',
-   'PYMODULE'),
-  ('pathlib',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\pathlib.py',
-   'PYMODULE'),
-  ('urllib.parse',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\urllib\\parse.py',
-   'PYMODULE'),
-  ('urllib',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\urllib\\__init__.py',
-   'PYMODULE'),
-  ('email',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\__init__.py',
-   'PYMODULE'),
-  ('email.parser',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\parser.py',
-   'PYMODULE'),
-  ('email._policybase',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\_policybase.py',
-   'PYMODULE'),
-  ('email.utils',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\utils.py',
-   'PYMODULE'),
-  ('email._parseaddr',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\_parseaddr.py',
-   'PYMODULE'),
-  ('socket',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\socket.py',
-   'PYMODULE'),
-  ('email.feedparser',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\feedparser.py',
-   'PYMODULE'),
-  ('email.message',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\message.py',
-   'PYMODULE'),
-  ('email.policy',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\policy.py',
-   'PYMODULE'),
-  ('email.contentmanager',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\contentmanager.py',
-   'PYMODULE'),
-  ('email.quoprimime',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\quoprimime.py',
-   'PYMODULE'),
-  ('string',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\string.py',
-   'PYMODULE'),
-  ('email.headerregistry',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\headerregistry.py',
-   'PYMODULE'),
-  ('email.iterators',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\iterators.py',
-   'PYMODULE'),
-  ('email.generator',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\generator.py',
-   'PYMODULE'),
-  ('email._encoded_words',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\_encoded_words.py',
-   'PYMODULE'),
-  ('base64',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\base64.py',
-   'PYMODULE'),
-  ('getopt',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\getopt.py',
-   'PYMODULE'),
-  ('quopri',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\quopri.py',
-   'PYMODULE'),
-  ('uu',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\uu.py',
-   'PYMODULE'),
-  ('optparse',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\optparse.py',
-   'PYMODULE'),
-  ('email._header_value_parser',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\_header_value_parser.py',
-   'PYMODULE'),
-  ('email.header',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\header.py',
-   'PYMODULE'),
-  ('email.base64mime',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\base64mime.py',
-   'PYMODULE'),
-  ('email.charset',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\charset.py',
-   'PYMODULE'),
-  ('email.encoders',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\encoders.py',
-   'PYMODULE'),
-  ('email.errors',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\email\\errors.py',
-   'PYMODULE'),
-  ('csv',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\csv.py',
-   'PYMODULE'),
-  ('tokenize',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\tokenize.py',
-   'PYMODULE'),
-  ('token',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\token.py',
-   'PYMODULE'),
-  ('struct',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\struct.py',
-   'PYMODULE'),
-  ('importlib.util',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\importlib\\util.py',
-   'PYMODULE'),
-  ('tarfile',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\tarfile.py',
-   'PYMODULE'),
-  ('gzip',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\gzip.py',
-   'PYMODULE'),
-  ('_compression',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\_compression.py',
-   'PYMODULE'),
-  ('lzma',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\lzma.py',
-   'PYMODULE'),
-  ('bz2',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\bz2.py',
-   'PYMODULE'),
-  ('fnmatch',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\fnmatch.py',
-   'PYMODULE'),
-  ('copy',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\copy.py',
-   'PYMODULE'),
-  ('gettext',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\gettext.py',
-   'PYMODULE'),
-  ('ntpath',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\ntpath.py',
-   'PYMODULE'),
-  ('genericpath',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\genericpath.py',
-   'PYMODULE'),
-  ('posixpath',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\posixpath.py',
-   'PYMODULE'),
-  ('stat',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\stat.py',
-   'PYMODULE'),
-  ('multiprocessing.popen_spawn_posix',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\popen_spawn_posix.py',
-   'PYMODULE'),
-  ('multiprocessing.resource_tracker',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\resource_tracker.py',
-   'PYMODULE'),
-  ('multiprocessing.util',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\util.py',
-   'PYMODULE'),
-  ('multiprocessing.forkserver',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\forkserver.py',
-   'PYMODULE'),
-  ('multiprocessing.connection',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\connection.py',
-   'PYMODULE'),
-  ('multiprocessing.resource_sharer',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\resource_sharer.py',
-   'PYMODULE'),
-  ('xmlrpc.client',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\xmlrpc\\client.py',
-   'PYMODULE'),
-  ('xmlrpc',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\xmlrpc\\__init__.py',
-   'PYMODULE'),
-  ('xml.parsers.expat',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\xml\\parsers\\expat.py',
-   'PYMODULE'),
-  ('xml.parsers',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\xml\\parsers\\__init__.py',
-   'PYMODULE'),
-  ('xml',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\xml\\__init__.py',
-   'PYMODULE'),
-  ('xml.sax.expatreader',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\xml\\sax\\expatreader.py',
-   'PYMODULE'),
-  ('xml.sax.saxutils',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\xml\\sax\\saxutils.py',
-   'PYMODULE'),
-  ('urllib.request',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\urllib\\request.py',
-   'PYMODULE'),
-  ('getpass',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\getpass.py',
-   'PYMODULE'),
-  ('nturl2path',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\nturl2path.py',
-   'PYMODULE'),
-  ('ftplib',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\ftplib.py',
-   'PYMODULE'),
-  ('netrc',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\netrc.py',
-   'PYMODULE'),
-  ('shlex',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\shlex.py',
-   'PYMODULE'),
-  ('mimetypes',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\mimetypes.py',
-   'PYMODULE'),
-  ('http.cookiejar',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\http\\cookiejar.py',
-   'PYMODULE'),
-  ('http',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\http\\__init__.py',
-   'PYMODULE'),
-  ('ssl',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\ssl.py',
-   'PYMODULE'),
-  ('urllib.response',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\urllib\\response.py',
-   'PYMODULE'),
-  ('urllib.error',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\urllib\\error.py',
-   'PYMODULE'),
-  ('hashlib',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\hashlib.py',
-   'PYMODULE'),
-  ('bisect',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\bisect.py',
-   'PYMODULE'),
-  ('xml.sax',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\xml\\sax\\__init__.py',
-   'PYMODULE'),
-  ('xml.sax.handler',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\xml\\sax\\handler.py',
-   'PYMODULE'),
-  ('xml.sax._exceptions',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\xml\\sax\\_exceptions.py',
-   'PYMODULE'),
-  ('xml.sax.xmlreader',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\xml\\sax\\xmlreader.py',
-   'PYMODULE'),
-  ('http.client',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\http\\client.py',
-   'PYMODULE'),
-  ('decimal',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\decimal.py',
-   'PYMODULE'),
-  ('_pydecimal',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\_pydecimal.py',
-   'PYMODULE'),
-  ('contextvars',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\contextvars.py',
-   'PYMODULE'),
-  ('numbers',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\numbers.py',
-   'PYMODULE'),
-  ('hmac',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\hmac.py',
-   'PYMODULE'),
-  ('tempfile',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\tempfile.py',
-   'PYMODULE'),
-  ('logging',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\logging\\__init__.py',
-   'PYMODULE'),
-  ('pickle',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\pickle.py',
-   'PYMODULE'),
-  ('pprint',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\pprint.py',
-   'PYMODULE'),
-  ('doctest',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\doctest.py',
-   'PYMODULE'),
-  ('unittest',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\unittest\\__init__.py',
-   'PYMODULE'),
-  ('unittest.async_case',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\unittest\\async_case.py',
-   'PYMODULE'),
-  ('asyncio',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\__init__.py',
-   'PYMODULE'),
-  ('asyncio.unix_events',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\unix_events.py',
-   'PYMODULE'),
-  ('asyncio.log',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\log.py',
-   'PYMODULE'),
-  ('asyncio.windows_events',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\windows_events.py',
-   'PYMODULE'),
-  ('asyncio.windows_utils',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\windows_utils.py',
-   'PYMODULE'),
-  ('asyncio.selector_events',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\selector_events.py',
-   'PYMODULE'),
-  ('asyncio.proactor_events',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\proactor_events.py',
-   'PYMODULE'),
-  ('asyncio.base_subprocess',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\base_subprocess.py',
-   'PYMODULE'),
-  ('asyncio.threads',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\threads.py',
-   'PYMODULE'),
-  ('asyncio.subprocess',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\subprocess.py',
-   'PYMODULE'),
-  ('asyncio.streams',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\streams.py',
-   'PYMODULE'),
-  ('asyncio.queues',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\queues.py',
-   'PYMODULE'),
-  ('asyncio.runners',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\runners.py',
-   'PYMODULE'),
-  ('asyncio.events',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\events.py',
-   'PYMODULE'),
-  ('asyncio.base_events',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\base_events.py',
-   'PYMODULE'),
-  ('concurrent.futures',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\concurrent\\futures\\__init__.py',
-   'PYMODULE'),
-  ('concurrent.futures.thread',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\concurrent\\futures\\thread.py',
-   'PYMODULE'),
-  ('queue',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\queue.py',
-   'PYMODULE'),
-  ('concurrent.futures.process',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\concurrent\\futures\\process.py',
-   'PYMODULE'),
-  ('multiprocessing.queues',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\queues.py',
-   'PYMODULE'),
-  ('multiprocessing.synchronize',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\synchronize.py',
-   'PYMODULE'),
-  ('multiprocessing.heap',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\heap.py',
-   'PYMODULE'),
-  ('concurrent.futures._base',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\concurrent\\futures\\_base.py',
-   'PYMODULE'),
-  ('concurrent',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\concurrent\\__init__.py',
-   'PYMODULE'),
-  ('asyncio.trsock',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\trsock.py',
-   'PYMODULE'),
-  ('asyncio.staggered',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\staggered.py',
-   'PYMODULE'),
-  ('asyncio.tasks',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\tasks.py',
-   'PYMODULE'),
-  ('asyncio.base_tasks',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\base_tasks.py',
-   'PYMODULE'),
-  ('asyncio.locks',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\locks.py',
-   'PYMODULE'),
-  ('asyncio.sslproto',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\sslproto.py',
-   'PYMODULE'),
-  ('asyncio.transports',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\transports.py',
-   'PYMODULE'),
-  ('asyncio.protocols',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\protocols.py',
-   'PYMODULE'),
-  ('asyncio.futures',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\futures.py',
-   'PYMODULE'),
-  ('asyncio.exceptions',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\exceptions.py',
-   'PYMODULE'),
-  ('asyncio.coroutines',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\coroutines.py',
-   'PYMODULE'),
-  ('asyncio.base_futures',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\base_futures.py',
-   'PYMODULE'),
-  ('asyncio.format_helpers',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\format_helpers.py',
-   'PYMODULE'),
-  ('asyncio.constants',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\asyncio\\constants.py',
-   'PYMODULE'),
-  ('unittest.signals',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\unittest\\signals.py',
-   'PYMODULE'),
-  ('unittest.main',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\unittest\\main.py',
-   'PYMODULE'),
-  ('unittest.runner',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\unittest\\runner.py',
-   'PYMODULE'),
-  ('unittest.loader',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\unittest\\loader.py',
-   'PYMODULE'),
-  ('unittest.suite',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\unittest\\suite.py',
-   'PYMODULE'),
-  ('unittest.case',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\unittest\\case.py',
-   'PYMODULE'),
-  ('unittest._log',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\unittest\\_log.py',
-   'PYMODULE'),
-  ('unittest.result',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\unittest\\result.py',
-   'PYMODULE'),
-  ('unittest.util',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\unittest\\util.py',
-   'PYMODULE'),
-  ('pdb',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\pdb.py',
-   'PYMODULE'),
-  ('pydoc',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\pydoc.py',
-   'PYMODULE'),
-  ('webbrowser',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\webbrowser.py',
-   'PYMODULE'),
-  ('http.server',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\http\\server.py',
-   'PYMODULE'),
-  ('socketserver',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\socketserver.py',
-   'PYMODULE'),
-  ('html',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\html\\__init__.py',
-   'PYMODULE'),
-  ('html.entities',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\html\\entities.py',
-   'PYMODULE'),
-  ('pydoc_data.topics',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\pydoc_data\\topics.py',
-   'PYMODULE'),
-  ('pydoc_data',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\pydoc_data\\__init__.py',
-   'PYMODULE'),
-  ('tty',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\tty.py',
-   'PYMODULE'),
-  ('sysconfig',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\sysconfig.py',
-   'PYMODULE'),
-  ('_aix_support',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\_aix_support.py',
-   'PYMODULE'),
-  ('_bootsubprocess',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\_bootsubprocess.py',
-   'PYMODULE'),
-  ('_osx_support',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\_osx_support.py',
-   'PYMODULE'),
-  ('distutils.log',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\distutils\\log.py',
-   'PYMODULE'),
-  ('distutils',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\distutils\\__init__.py',
-   'PYMODULE'),
-  ('distutils.ccompiler',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\distutils\\ccompiler.py',
-   'PYMODULE'),
-  ('distutils.fancy_getopt',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\distutils\\fancy_getopt.py',
-   'PYMODULE'),
-  ('distutils.debug',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\distutils\\debug.py',
-   'PYMODULE'),
-  ('distutils.util',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\distutils\\util.py',
-   'PYMODULE'),
-  ('distutils.filelist',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\distutils\\filelist.py',
-   'PYMODULE'),
-  ('distutils.dep_util',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\distutils\\dep_util.py',
-   'PYMODULE'),
-  ('distutils.dir_util',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\distutils\\dir_util.py',
-   'PYMODULE'),
-  ('distutils.file_util',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\distutils\\file_util.py',
-   'PYMODULE'),
-  ('distutils.spawn',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\distutils\\spawn.py',
-   'PYMODULE'),
-  ('distutils.errors',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\distutils\\errors.py',
-   'PYMODULE'),
-  ('distutils.sysconfig',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\distutils\\sysconfig.py',
-   'PYMODULE'),
-  ('distutils.text_file',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\distutils\\text_file.py',
-   'PYMODULE'),
-  ('platform',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\platform.py',
-   'PYMODULE'),
-  ('plistlib',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\plistlib.py',
-   'PYMODULE'),
-  ('pkgutil',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\pkgutil.py',
-   'PYMODULE'),
-  ('zipimport',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\zipimport.py',
-   'PYMODULE'),
-  ('runpy',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\runpy.py',
-   'PYMODULE'),
-  ('glob',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\glob.py',
-   'PYMODULE'),
-  ('code',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\code.py',
-   'PYMODULE'),
-  ('codeop',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\codeop.py',
-   'PYMODULE'),
-  ('dis',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\dis.py',
-   'PYMODULE'),
-  ('opcode',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\opcode.py',
-   'PYMODULE'),
-  ('bdb',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\bdb.py',
-   'PYMODULE'),
-  ('cmd',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\cmd.py',
-   'PYMODULE'),
-  ('inspect',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\inspect.py',
-   'PYMODULE'),
-  ('ast',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\ast.py',
-   'PYMODULE'),
-  ('difflib',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\difflib.py',
-   'PYMODULE'),
-  ('__future__',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\__future__.py',
-   'PYMODULE'),
-  ('_compat_pickle',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\_compat_pickle.py',
-   'PYMODULE'),
-  ('multiprocessing.process',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\process.py',
-   'PYMODULE'),
-  ('multiprocessing.context',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\context.py',
-   'PYMODULE'),
-  ('multiprocessing.popen_forkserver',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\popen_forkserver.py',
-   'PYMODULE'),
-  ('multiprocessing.sharedctypes',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\sharedctypes.py',
-   'PYMODULE'),
-  ('multiprocessing.pool',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\pool.py',
-   'PYMODULE'),
-  ('multiprocessing.dummy',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\dummy\\__init__.py',
-   'PYMODULE'),
-  ('multiprocessing.dummy.connection',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\dummy\\connection.py',
-   'PYMODULE'),
-  ('multiprocessing.managers',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\managers.py',
-   'PYMODULE'),
-  ('multiprocessing.shared_memory',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\shared_memory.py',
-   'PYMODULE'),
-  ('secrets',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\secrets.py',
-   'PYMODULE'),
-  ('multiprocessing.reduction',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\reduction.py',
-   'PYMODULE'),
-  ('multiprocessing.popen_fork',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\popen_fork.py',
-   'PYMODULE'),
-  ('multiprocessing.popen_spawn_win32',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\popen_spawn_win32.py',
-   'PYMODULE'),
-  ('multiprocessing.spawn',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\spawn.py',
-   'PYMODULE'),
-  ('multiprocessing',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\multiprocessing\\__init__.py',
-   'PYMODULE'),
-  ('stringprep',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\stringprep.py',
-   'PYMODULE'),
-  ('tracemalloc',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\tracemalloc.py',
-   'PYMODULE'),
-  ('_py_abc',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\_py_abc.py',
-   'PYMODULE'),
-  ('ctypes',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\ctypes\\__init__.py',
-   'PYMODULE'),
-  ('ctypes._endian',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\ctypes\\_endian.py',
-   'PYMODULE'),
-  ('random',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\random.py',
-   'PYMODULE'),
-  ('statistics',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\statistics.py',
-   'PYMODULE'),
-  ('fractions',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\fractions.py',
-   'PYMODULE'),
-  ('tkinter.ttk',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\tkinter\\ttk.py',
-   'PYMODULE'),
-  ('tkinter',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\tkinter\\__init__.py',
-   'PYMODULE'),
-  ('tkinter.constants',
-   'c:\\users\\milan '
-   'kandwal\\appdata\\local\\programs\\python\\python39\\lib\\tkinter\\constants.py',
-   'PYMODULE')])
->>>>>>> 5161afece2d065bc40bbe0b2247d6a98d4e610bf

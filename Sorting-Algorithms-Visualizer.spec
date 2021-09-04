@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # -*- mode: python ; coding: utf-8 -*-
 
 
@@ -6,11 +5,12 @@ block_cipher = None
 
 
 a = Analysis(['Sorting-Algorithms-Visualizer.py'],
-             pathex=['H:\\Programing Projects\\VScode\\Pythons_Scripts\\Sorting-Algorithm-Visualizer-in-Python'],
+             pathex=['H:\\Programing Projects\\Pythons_Scripts\\Sorting-Algorithm-Visualizer'],
              binaries=[],
              datas=[],
              hiddenimports=[],
              hookspath=[],
+             hooksconfig={},
              runtime_hooks=[],
              excludes=[],
              win_no_prefer_redirects=False,
@@ -19,11 +19,12 @@ a = Analysis(['Sorting-Algorithms-Visualizer.py'],
              noarchive=False)
 pyz = PYZ(a.pure, a.zipped_data,
              cipher=block_cipher)
+
 exe = EXE(pyz,
           a.scripts,
           a.binaries,
           a.zipfiles,
-          a.datas,
+          a.datas,  
           [],
           name='Sorting-Algorithms-Visualizer',
           debug=False,
@@ -32,40 +33,8 @@ exe = EXE(pyz,
           upx=True,
           upx_exclude=[],
           runtime_tmpdir=None,
-          console=False )
-=======
-# -*- mode: python ; coding: utf-8 -*-
-
-
-block_cipher = None
-
-
-a = Analysis(['Sorting-Algorithms-Visualizer.py'],
-             pathex=['H:\\Programing Projects\\VScode\\Pythons_Scripts\\Sorting-Algorithm-Visualizer-in-Python'],
-             binaries=[],
-             datas=[],
-             hiddenimports=[],
-             hookspath=[],
-             runtime_hooks=[],
-             excludes=[],
-             win_no_prefer_redirects=False,
-             win_private_assemblies=False,
-             cipher=block_cipher,
-             noarchive=False)
-pyz = PYZ(a.pure, a.zipped_data,
-             cipher=block_cipher)
-exe = EXE(pyz,
-          a.scripts,
-          a.binaries,
-          a.zipfiles,
-          a.datas,
-          [],
-          name='Sorting-Algorithms-Visualizer',
-          debug=False,
-          bootloader_ignore_signals=False,
-          strip=False,
-          upx=True,
-          upx_exclude=[],
-          runtime_tmpdir=None,
-          console=False )
->>>>>>> 5161afece2d065bc40bbe0b2247d6a98d4e610bf
+          console=False,
+          disable_windowed_traceback=False,
+          target_arch=None,
+          codesign_identity=None,
+          entitlements_file=None )
