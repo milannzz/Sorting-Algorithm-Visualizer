@@ -38,13 +38,14 @@ def generate():
 
 
 def setspeed():
-    if speedMenu.get() == 'Slowest':
+    speed = speedMenu.get()
+    if speed == 'Slowest':
         return 1000
-    elif speedMenu.get() == 'Slow':
+    elif speed == 'Slow':
         return 500
-    elif speedMenu.get() == 'Medium':
+    elif speed == 'Medium':
         return 100
-    elif speedMenu.get() == 'Fast':
+    elif speed == 'Fast':
         return 10
     else:
         return 0
@@ -52,19 +53,20 @@ def setspeed():
 def sort():
     global array
     timespeed = setspeed()
-    if algoMenu.get() == 'Bubble Sort':
+    algo = algoMenu.get()
+    if algo == 'Bubble Sort':
         Algorithms.bubble_sort(array, drawArray, timespeed)
-    elif algoMenu.get() == 'Merge Sort':
+    elif algo == 'Merge Sort':
         Algorithms.merge_sort(array, 0, len(array) - 1, drawArray, timespeed)
-    elif algoMenu.get() == 'Bogo Sort':
+    elif algo == 'Bogo Sort':
         Algorithms.bogo_sort(array, drawArray, timespeed)
-    elif algoMenu.get() == 'Selection Sort':
+    elif algo == 'Selection Sort':
         Algorithms.selection_sort(array, drawArray, timespeed)
-    elif algoMenu.get() == 'Insertion Sort':
+    elif algo == 'Insertion Sort':
         Algorithms.insertion_sort(array, drawArray, timespeed)
-    elif algoMenu.get() == 'Quick Sort':
+    elif algo == 'Quick Sort':
         Algorithms.quick_sort(array, 0, len(array) - 1, drawArray, timespeed)
-    elif algoMenu.get() == 'Odd Even Sort':
+    elif algo == 'Odd Even Sort':
         Algorithms.odd_even_sort(array, drawArray, timespeed)
 
 def swithchon():
@@ -85,9 +87,6 @@ def exit():
 class Algorithms:
     global switch
     def odd_even_sort(array, drawArray, timespeed):
-        mainWindow.update()
-        if(switch == False):
-            return
         isSorted = 0
         while isSorted == 0:
             mainWindow.update()
@@ -114,12 +113,10 @@ class Algorithms:
                     isSorted = 0
                     mainWindow.after(timespeed, drawArray(array, [color['ORANGE'] if x == i else color["YELLOW"] if x == i + 1 
                     else color["BLUE"] for x in range(len(array))]))
+        drawArray(array, [color['BLUE'] for x in range(len(array))])
             
 
     def quick_sort(array, start, end, drawarray, timespeed):
-        mainWindow.update()
-        if(switch == False):
-            return
         if start < end :
             mainWindow.update()
             if(switch == False):
@@ -128,9 +125,9 @@ class Algorithms:
             pivot = Algorithms.partition(array, start, end, drawArray, timespeed)
 
             mainWindow.after(timespeed, drawArray(array, [color["PURPLE"] if x >= start 
-                and x < pivot else color['ORANGE'] if x == pivot 
-                else color['YELLOW'] if x > pivot and x <= end 
-                else color['BLUE'] for x in range(len(array))]))
+                                        and x < pivot else color['ORANGE'] if x == pivot 
+                                        else color['YELLOW'] if x > pivot and x <= end 
+                                        else color['BLUE'] for x in range(len(array))]))
 
             Algorithms.quick_sort(array, start, pivot - 1, drawArray, timespeed)
             mainWindow.update()
@@ -139,9 +136,9 @@ class Algorithms:
             Algorithms.quick_sort(array, pivot + 1, end, drawArray, timespeed)
 
             mainWindow.after(timespeed, drawArray(array, [color["PURPLE"] if x >=start 
-                and x < pivot else color['ORANGE'] if x == pivot
-                else color['YELLOW'] if x > pivot and x<=end 
-                else color['BLUE'] for x in range(len(array))]))
+                                        and x < pivot else color['ORANGE'] if x == pivot
+                                        else color['YELLOW'] if x > pivot and x<=end 
+                                        else color['BLUE'] for x in range(len(array))]))
 
         drawArray(array, [color['BLUE'] for x in range(len(array))])
 
@@ -198,8 +195,8 @@ class Algorithms:
                 if array[j] > array[j + 1]:
                     array[j], array[j + 1] = array[j + 1], array[j]
                     mainWindow.after(timespeed, drawArray(array, [color['ORANGE'] if x == j 
-                            else color["YELLOW"] if x == j + 1
-                            else color["BLUE"] for x in range(len(array))]))
+                                            else color["YELLOW"] if x == j + 1
+                                            else color["BLUE"] for x in range(len(array))]))
         drawArray(array, [color['BLUE'] for x in range(len(array))])
 
 
@@ -212,17 +209,14 @@ class Algorithms:
         
     def is_sorted(array, drawArray, timespeed):
         size = len(array)
-        mainWindow.update()
         for i in range (0, size - 1):
+            mainWindow.update()
             if(array[i] > array[i - 1]):
                 return False    
         return True
 
     def shuffle(array, drawArray, timespeed):
-        mainWindow.update()
-
         size = len(array)
-        mainWindow.update()
         for i in range (0, size):
             mainWindow.update()
             if(switch == False):
@@ -249,35 +243,34 @@ class Algorithms:
                 if L[j] < L[min_index]:
                     min_index = j
                 drawArray(array, [color['PURPLE'] if x == j 
-                    else color['ORANGE'] if x == i 
-                    else color['YELLOW'] if x == min_index 
-                    else color['BLUE'] for x in range(len(array))])
+                        else color['ORANGE'] if x == i 
+                        else color['YELLOW'] if x == min_index 
+                        else color['BLUE'] for x in range(len(array))])
             
             drawArray(array, [color['ORANGE'] if  x == i 
-                    else color['YELLOW'] if  x == min_index 
-                    else color["BLUE"] for x in range(len(array))])
+                        else color['YELLOW'] if  x == min_index 
+                        else color["BLUE"] for x in range(len(array))])
 
             L[i],  L[min_index] = L[min_index],  L[i]
             
             mainWindow.after(timespeed, drawArray(array, [color['YELLOW'] if  x == i 
-                    else color['ORANGE'] if  x == min_index 
-                    else color["BLUE"] for x in range(len(array))]))
+                                        else color['ORANGE'] if  x == min_index 
+                                        else color["BLUE"] for x in range(len(array))]))
 
         drawArray(array, [color['BLUE'] for x in range(len(array))])
 
 
 
     def merge_sort(array, start, end, drawArray, timespeed):
-        mainWindow.update()
         if(switch == False):
             return
         if start<end:
             mid = int((start + end) / 2)
 
             mainWindow.after(timespeed, drawArray(array, [color["PURPLE"] if x >=start 
-                and x < mid else color['ORANGE'] if x == mid 
-                else color['YELLOW'] if x > mid and x <= end 
-                else color['BLUE'] for x in range(len(array))]))
+                                        and x < mid else color['ORANGE'] if x == mid 
+                                        else color['YELLOW'] if x > mid and x <= end 
+                                        else color['BLUE'] for x in range(len(array))]))
 
             Algorithms.merge_sort(array, start, mid, drawArray, timespeed)
             mainWindow.update()
@@ -286,23 +279,20 @@ class Algorithms:
             Algorithms.merge_sort(array, mid + 1, end, drawArray, timespeed)
 
             mainWindow.after(timespeed, drawArray(array, [color["PURPLE"] if x >=start 
-                and x < mid else color['ORANGE'] if x == mid 
-                else color['YELLOW'] if x >mid and x <= end 
-                else color['BLUE'] for x in range(len(array))]))
+                                        and x < mid else color['ORANGE'] if x == mid 
+                                        else color['YELLOW'] if x >mid and x <= end 
+                                        else color['BLUE'] for x in range(len(array))]))
 
             Algorithms.merge(array, start, mid, end, drawArray, timespeed)
         
         drawArray(array, [color["BLUE"] for x in range(len(array))])
 
     def merge(data,  start,  mid,  end,  drawArray,  timespeed):
-        mainWindow.update()
         if(switch == False):
             return
-
         p = start
         q = mid + 1
         tempArray = []
-        
         for i in range(start,  end + 1):
             mainWindow.update()
             if(switch == False):
