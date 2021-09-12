@@ -1,4 +1,4 @@
-from tkinter import  * 
+import tkinter as tk
 from tkinter import ttk
 import random
 from Color import color
@@ -10,7 +10,7 @@ ctypes.windll.shcore.SetProcessDpiAwareness(1)
 # <--- Functions/definations --->
 
 def draw_array(array, color_array):
-    visualCanvas.delete("all")
+    visual_canvas.delete("all")
     canvas_width = main_window.winfo_width() - (2 * canvas_padx)
     canvas_height = 480
     x_width = canvas_width / (len(array) + 1)
@@ -23,7 +23,7 @@ def draw_array(array, color_array):
         y0 = canvas_height - height * 470
         x1 = (i + 1) * x_width + offset
         y1 = canvas_height
-        visualCanvas.create_rectangle(x0, y0, x1, y1, fill = color_array[i]) 
+        visual_canvas.create_rectangle(x0, y0, x1, y1, fill = color_array[i]) 
     
     main_window.update_idletasks()
 
@@ -53,7 +53,7 @@ def setspeed():
 def sort():
     global array
     timespeed = setspeed()
-    algo = algoMenu.get()
+    algo = algorithms_menu_combobox.get()
     if algo == 'Bubble Sort':
         Algorithms.bubble_sort(array, draw_array, timespeed)
     elif algo == 'Merge Sort':
@@ -322,7 +322,7 @@ class Algorithms:
 
 # <--- UI elements here --->
 
-main_window = Tk()
+main_window = tk.Tk()
 main_window.title("Sorting Algorithms Visualizer")
 main_window.geometry("980x710")
 main_window.resizable(0,0)
@@ -330,56 +330,56 @@ main_window.config(bg = color["LIGHT_GRAY"])
 main_window.grid_columnconfigure(0, weight = 1)
 main_window.grid_rowconfigure(0, weight = 1)
 
-algorithms_name = StringVar()
+algorithms_name = tk.StringVar()
 algorithms_list = ['Quick Sort', 'Merge Sort', "Odd Even Sort", 'Bubble Sort', 'Selection Sort', "Insertion Sort", 'Bogo Sort']
 
-speed_name = StringVar()
+speed_name = tk.StringVar()
 speed_list = ["Real-Time", 'Fast', 'Medium', 'Slow', 'Slowest']
 
 # Main Array
 array  =  []
-no_of_items = IntVar()
+no_of_items = tk.IntVar()
 no_of_items.set(100)
 
-uiFrame  =  Frame(main_window , bg = color['WHITE'])
-uiFrame.grid(row = 0, column = 0, padx = 10, pady = 5)
-uiFrame.grid_columnconfigure(0,  weight = 1)
+container_frame  =  tk.Frame(main_window , bg = color['WHITE'])
+container_frame.grid(row = 0, column = 0, padx = 10, pady = 5)
+container_frame.grid_columnconfigure(0,  weight = 1)
 
-uiAlgos  =  Label(uiFrame, text = 'Algorithms: ', bg = color['WHITE'])
-uiAlgos.grid(row = 0, column = 0, padx = 12, pady = 10, sticky = W)
+algorithms_label  =  tk.Label(container_frame, text = 'Algorithms: ', bg = color['WHITE'])
+algorithms_label.grid(row = 0, column = 0, padx = 12, pady = 10, sticky = tk.W)
 
-algoMenu  =  ttk.Combobox(uiFrame, textvariable = algorithms_name, values = algorithms_list)
-algoMenu.grid(row = 0, column = 2, padx = 12, pady = 10)
-algoMenu.current(0)
+algorithms_menu_combobox  =  ttk.Combobox(container_frame, textvariable = algorithms_name, values = algorithms_list)
+algorithms_menu_combobox.grid(row = 0, column = 2, padx = 12, pady = 10)
+algorithms_menu_combobox.current(0)
 
-uiSpeed  =  Label(uiFrame, text = 'Speed:', bg = color['WHITE'])
-uiSpeed.grid(row = 1, column = 0, padx = 12, pady = 10, sticky = W)
+speed_label = tk.Label(container_frame, text = 'Speed:', bg = color['WHITE'])
+speed_label.grid(row = 1, column = 0, padx = 12, pady = 10, sticky = tk.W)
 
-speedMenu  =  ttk.Combobox(uiFrame, textvariable = speed_name, values = speed_list)
+speedMenu = ttk.Combobox(container_frame, textvariable = speed_name, values = speed_list)
 speedMenu.grid(row = 1, column = 2, padx = 12, pady = 10)
 speedMenu.current(1)
 
-uiNoOfColumns  =  Label(uiFrame, text = 'Number of Columns:', bg = color['WHITE'])
-uiNoOfColumns.grid(row = 2, column = 0, padx = 12, pady = 10, sticky = W)
+no_of_items_label = tk.Label(container_frame, text = 'Number of Columns:', bg = color['WHITE'])
+no_of_items_label.grid(row = 2, column = 0, padx = 12, pady = 10, sticky = tk.W)
 
-entryNoOfColumns = Entry(uiFrame, textvariable = no_of_items, bg = color["WHITE"],width = 23)
-entryNoOfColumns.grid(row = 2, column = 2, padx = 12, pady = 10, sticky = W)
+no_of_items_entry = tk.Entry(container_frame, textvariable = no_of_items, bg = color["WHITE"],width = 23)
+no_of_items_entry.grid(row = 2, column = 2, padx = 12, pady = 10, sticky = tk.W)
 
-generateButton  =  Button(uiFrame, text = 'Generate', command = generate, bg = color['WHITE'], width = 14)
-generateButton.grid(row = 3, column = 0, padx = 12, pady = 10)
+generate_button = tk.Button(container_frame, text = 'Generate', command = generate, bg = color['WHITE'], width = 14)
+generate_button.grid(row = 3, column = 0, padx = 12, pady = 10)
 
-sortButton  =  Button(uiFrame, text = 'Sort', command = swithchon, bg = color['WHITE'], width = 14)
-sortButton.grid(row = 3, column = 1, padx = 12, pady = 10)
+sort_button = tk.Button(container_frame, text = 'Sort', command = swithchon, bg = color['WHITE'], width = 14)
+sort_button.grid(row = 3, column = 1, padx = 12, pady = 10)
 
-stopButton  =  Button(uiFrame, text = 'Stop', command = stop, bg = color['WHITE'], width = 14)
-stopButton.grid(row = 3, column = 2, padx = 12, pady = 10)
+stop_button = tk.Button(container_frame, text = 'Stop', command = stop, bg = color['WHITE'], width = 14)
+stop_button.grid(row = 3, column = 2, padx = 12, pady = 10)
 
-exitButton  =  Button(uiFrame, text = 'Exit', command = exit, bg = color['WHITE'], background = color['RED'], fg = color['WHITE'], width = 14)
-exitButton.grid(row = 3, column = 3, padx = 12, pady = 10)
+exit_button = tk.Button(container_frame, text = 'Exit', command = exit, bg = color['WHITE'], background = color['RED'], fg = color['WHITE'], width = 14)
+exit_button.grid(row = 3, column = 3, padx = 12, pady = 10)
 
 canvas_padx = 10
-visualCanvas  =  Canvas(main_window, width = 980, height = 480, bg = color['WHITE'])
-visualCanvas.grid(row = 4 , column = 0, padx = canvas_padx, pady = (0, 10))
+visual_canvas = tk.Canvas(main_window, width = 980, height = 480, bg = color['WHITE'])
+visual_canvas.grid(row = 4 , column = 0, padx = canvas_padx, pady = (0, 10))
 
 # <--- Print Main Window --->
 
