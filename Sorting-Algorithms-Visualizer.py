@@ -3,25 +3,25 @@ from tkinter import ttk
 import random
 from Color import color
 
-# Clearer Ui using ctypes
+# <--- Clearer ui using ctypes --->
 import ctypes
 ctypes.windll.shcore.SetProcessDpiAwareness(1)
 
-# <--- Functions/definations --->
+# <--- Functions / definations --->
 
 def draw_array(array, color_array):
     visual_canvas.delete("all")
     canvas_width = main_window.winfo_width() - (2 * canvas_padx)
     canvas_height = 480
     x_width = canvas_width / (len(array) + 1)
-    offset = 4
+    x_offset = 0
     spacing = 2
     normalized_array = [i / max(array) for i in array] 
 
     for i, height in enumerate(normalized_array):
-        x0 = i * x_width + offset + spacing
+        x0 = i * x_width + x_offset + spacing
         y0 = canvas_height - height * 470
-        x1 = (i + 1) * x_width + offset
+        x1 = (i + 1) * x_width + x_offset
         y1 = canvas_height
         visual_canvas.create_rectangle(x0, y0, x1, y1, fill = color_array[i]) 
     
@@ -324,8 +324,6 @@ class Algorithms:
 
 main_window = tk.Tk()
 main_window.title("Sorting Algorithms Visualizer")
-main_window.geometry("980x710")
-main_window.resizable(0,0)
 main_window.config(bg = color["LIGHT_GRAY"])
 main_window.grid_columnconfigure(0, weight = 1)
 main_window.grid_rowconfigure(0, weight = 1)
@@ -378,6 +376,7 @@ exit_button = tk.Button(container_frame, text = 'Exit', command = exit, bg = col
 exit_button.grid(row = 3, column = 3, padx = 12, pady = 10)
 
 canvas_padx = 10
+canvas_height = max(980, main_window.winfo_width())
 visual_canvas = tk.Canvas(main_window, width = 980, height = 480, bg = color['WHITE'])
 visual_canvas.grid(row = 4 , column = 0, padx = canvas_padx, pady = (0, 10))
 
