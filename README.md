@@ -4,11 +4,11 @@ So, have designed and developed a program that visualizes 7 different Sorting Al
 
 **How To use -**
 1. open Sorting-Algorithms-Visualizer.exe.
-2. click generate to create a random array.
+2. click **Generate** to create a random array.
 3. Choose your desired algorithms from dropdown menu.
-4. click sort.
-5. click stop to interrupt sorting  algorithm.
-6. click exit to stop program.
+4. Click **Sort** start algorithm.
+5. Click **Stop** to pause sorting algorithm.
+6. Click **Exit** to stop program.
 
 **Technology Used -**
 1. Python
