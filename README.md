@@ -3,8 +3,8 @@ The human mind is more efficient to process visuals stimulus instead of complex 
 So, have designed and developed a program that visualizes 7 different Sorting Algorithms with a neat GUI and smooth Animations.
 
 **How To use -**
-1. open Sorting-Algorithms-Visualizer.exe.
-2. click **Generate** to create a random array.
+1. Open Sorting-Algorithms-Visualizer.exe.
+2. Click **Generate** to create a random array.
 3. Choose your desired algorithms from dropdown menu.
 4. Click **Sort** start algorithm.
 5. Click **Stop** to pause sorting algorithm.
