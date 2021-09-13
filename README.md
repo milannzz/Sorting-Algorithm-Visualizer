@@ -1,11 +1,6 @@
 # Sorting-Algorithm-Visualizer-in-Python
-The human brain can easily process visuals instead of long codes to understand the algorithms.
-
-Designed.
-
-In this Project I have designed and developed a program that visualizes 7 different Sorting Algorithms with a neat GUI and smooth Animations.
-
-The program has been implemented using Python, Tkinterand alot of debugging/google searches.
+The human mid is more efficient to process visuals stimulus instead of complex codes to understand the algorithms
+So, have designed and developed a program that visualizes 7 different Sorting Algorithms with a neat GUI and smooth Animations.
 
 **How To use -**
 1. open Sorting-Algorithms-Visualizer.exe.
