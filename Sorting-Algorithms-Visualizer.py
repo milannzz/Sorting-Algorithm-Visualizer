@@ -339,29 +339,30 @@ array  =  []
 no_of_items = tk.IntVar()
 no_of_items.set(100)
 
-container_frame  =  tk.Frame(main_window , bg = color['WHITE'])
+container_frame  =  tk.Frame(main_window , bg = color['WHITE'], height=25220002)
 container_frame.grid(row = 0, column = 0, padx = 10, pady = 5)
-container_frame.grid_columnconfigure(0,  weight = 1)
+container_frame.grid_columnconfigure(0,  weight = 0)
+container_frame.grid_rowconfigure(0,  weight = 0)
 
 algorithms_label  =  tk.Label(container_frame, text = 'Algorithms: ', bg = color['WHITE'])
 algorithms_label.grid(row = 0, column = 0, padx = 12, pady = 10, sticky = tk.W)
 
 algorithms_menu_combobox  =  ttk.Combobox(container_frame, textvariable = algorithms_name, values = algorithms_list)
-algorithms_menu_combobox.grid(row = 0, column = 2, padx = 12, pady = 10)
+algorithms_menu_combobox.grid(row = 0, column = 2, padx = (0, 338), pady = 10)
 algorithms_menu_combobox.current(0)
 
 speed_label = tk.Label(container_frame, text = 'Speed:', bg = color['WHITE'])
 speed_label.grid(row = 1, column = 0, padx = 12, pady = 10, sticky = tk.W)
 
 speedMenu = ttk.Combobox(container_frame, textvariable = speed_name, values = speed_list)
-speedMenu.grid(row = 1, column = 2, padx = 12, pady = 10)
+speedMenu.grid(row = 1, column = 2, padx = (0, 338), pady = 10)
 speedMenu.current(1)
 
 no_of_items_label = tk.Label(container_frame, text = 'Number of Columns:', bg = color['WHITE'])
 no_of_items_label.grid(row = 2, column = 0, padx = 12, pady = 10, sticky = tk.W)
 
 no_of_items_entry = tk.Entry(container_frame, textvariable = no_of_items, bg = color["WHITE"],width = 23)
-no_of_items_entry.grid(row = 2, column = 2, padx = 12, pady = 10, sticky = tk.W)
+no_of_items_entry.grid(row = 2, column = 2, padx = (0, 338), pady = 10, sticky = tk.W)
 
 generate_button = tk.Button(container_frame, text = 'Generate', command = generate, bg = color['WHITE'], width = 14)
 generate_button.grid(row = 3, column = 0, padx = 12, pady = 10)
