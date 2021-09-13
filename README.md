@@ -1,5 +1,5 @@
 # Sorting-Algorithm-Visualizer-in-Python
-The human mid is more efficient to process visuals stimulus instead of complex codes to understand the algorithms
+The human mind is more efficient to process visuals stimulus instead of complex codes to understand the algorithms
 So, have designed and developed a program that visualizes 7 different Sorting Algorithms with a neat GUI and smooth Animations.
 
 **How To use -**
